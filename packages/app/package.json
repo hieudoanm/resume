@@ -32,8 +32,8 @@
 		"build:mobile": "pnpm run build:android && pnpm run build:ios",
 		"prestart": "kill-port 3000",
 		"start": "next start",
-		"lint": "eslint",
 		"format": "prettier --cache --write .",
+		"lint": "eslint",
 		"test": "jest"
 	},
 	"dependencies": {
