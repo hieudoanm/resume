@@ -64,8 +64,8 @@ importers:
         specifier: 25.3.1
         version: 25.3.1
       '@types/pdfmake':
-        specifier: 0.3.1
-        version: 0.3.1
+        specifier: 0.3.2
+        version: 0.3.2
       '@types/react':
         specifier: 19.2.14
         version: 19.2.14
@@ -1094,8 +1094,8 @@ packages:
   '@types/pdfkit@0.17.4':
     resolution: {integrity: sha512-odAmVuuguRxKh1X4pbMrJMp8ecwNqHRw6lweupvzK+wuyNmi6wzlUlGVZ9EqMvp3Bs2+L9Ty0sRlrvKL+gsQZg==}
 
-  '@types/pdfmake@0.3.1':
-    resolution: {integrity: sha512-/pR77+t9o0yqrSNwdA2wfp79ohgaXAhF2dTwXF4hNiI2ArHxaDlJ1BlBr3SWCrPUkjWjDRRHJv2+qALG33YPTA==}
+  '@types/pdfmake@0.3.2':
+    resolution: {integrity: sha512-2TZSL8puKJs/rHvMV1b8BhHD+qYyV9da8mVY83/x7ZR/NaEPXbm3+t5SwkwaH6QAIhY1zQVAaFDhHWL0haMstA==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -4811,7 +4811,7 @@ snapshots:
     dependencies:
       '@types/node': 25.3.1
 
-  '@types/pdfmake@0.3.1':
+  '@types/pdfmake@0.3.2':
     dependencies:
       '@types/node': 25.3.1
       '@types/pdfkit': 0.17.4
