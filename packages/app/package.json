@@ -37,9 +37,9 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@capacitor/android": "8.1.0",
-		"@capacitor/core": "8.1.0",
-		"@capacitor/ios": "8.1.0",
+		"@capacitor/android": "8.2.0",
+		"@capacitor/core": "8.2.0",
+		"@capacitor/ios": "8.2.0",
 		"next": "16.1.6",
 		"pdfmake": "0.3.5",
 		"react": "19.2.4",
@@ -47,7 +47,7 @@
 		"yaml": "2.8.2"
 	},
 	"devDependencies": {
-		"@capacitor/cli": "8.1.0",
+		"@capacitor/cli": "8.2.0",
 		"@tailwindcss/postcss": "4.2.1",
 		"@tauri-apps/cli": "2.10.1",
 		"@testing-library/jest-dom": "6.9.1",
