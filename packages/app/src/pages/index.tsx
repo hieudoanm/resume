@@ -6,7 +6,7 @@ import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-pdfMake.vfs = pdfFonts.vfs;
+(pdfMake as any).vfs = pdfFonts.vfs;
 
 type ParseResult = { ok: true; doc: unknown } | { ok: false; error: string };
 
@@ -60,21 +60,21 @@ const HomePage: NextPage = () => {
 	/* ============================
 	   PDF SIDE EFFECT
 	============================ */
-
 	useEffect(() => {
 		if (!parseResult.ok) return;
 
 		let cancelled = false;
 
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		pdfMake.createPdf(parseResult.doc as any).getBlob((blob) => {
+		(async () => {
+			const blob = await pdfMake.createPdf(parseResult.doc as any).getBlob();
+
 			if (cancelled) return;
 
 			const url = URL.createObjectURL(blob);
 			if (iframeRef.current) {
 				iframeRef.current.src = url;
 			}
-		});
+		})();
 
 		return () => {
 			cancelled = true;
