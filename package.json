@@ -1,17 +1,17 @@
 {
-  "name": "@resume/workspaces",
+  "name": "@docs/workspaces",
   "version": "0.0.1",
-  "description": "resume",
+  "description": "docs",
   "keywords": [
-    "resume"
+    "docs"
   ],
-  "homepage": "https://hieudoanm.github.io/resume",
+  "homepage": "https://hieudoanm.github.io/docs",
   "bugs": {
-    "url": "https://github.com/hieudoanm/resume/issues"
+    "url": "https://github.com/hieudoanm/docs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/hieudoanm/resume.git"
+    "url": "git+ssh://git@github.com/hieudoanm/docs.git"
   },
   "license": "GPL-3.0",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",

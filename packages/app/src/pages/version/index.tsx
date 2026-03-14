@@ -1,5 +1,5 @@
 import { GetStaticProps, NextPage } from 'next';
-import { VersionTemplate } from '@resume/templates/VersionTemplate';
+import { VersionTemplate } from '@docs/templates/VersionTemplate';
 
 type Props = {
 	version: string;

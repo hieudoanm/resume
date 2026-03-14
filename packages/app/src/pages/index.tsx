@@ -1,7 +1,7 @@
 import {
 	LandingContent,
 	LandingTemplate,
-} from '@resume/templates/LandingTemplate';
+} from '@docs/templates/LandingTemplate';
 import { NextPage } from 'next';
 
 const content: LandingContent = {

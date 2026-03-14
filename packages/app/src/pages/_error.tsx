@@ -1,4 +1,4 @@
-import { ErrorTemplate } from '@resume/templates/ErrorTemplate';
+import { ErrorTemplate } from '@docs/templates/ErrorTemplate';
 import { NextPage } from 'next';
 
 const messages = [

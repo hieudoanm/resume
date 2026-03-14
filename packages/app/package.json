@@ -1,18 +1,18 @@
 {
-	"name": "@resume/app",
+	"name": "@docs/app",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Resume App",
+	"description": "Docs",
 	"keywords": [
-		"resume"
+		"docs"
 	],
-	"homepage": "https://hieudoanm.github.io/resume",
+	"homepage": "https://hieudoanm.github.io/docs",
 	"bugs": {
-		"url": "https://github.com/hieudoanm/resume/issues"
+		"url": "https://github.com/hieudoanm/docs/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/hieudoanm/resume.git"
+		"url": "git+ssh://git@github.com/hieudoanm/docs.git"
 	},
 	"license": "GPL-3.0",
 	"author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",

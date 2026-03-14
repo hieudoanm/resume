@@ -1,6 +1,6 @@
-import { YAML_TEMPLATE } from '@resume/constants/app';
-import { useDebounce } from '@resume/hooks/use-debounce';
-import { yaml2pdfMake } from '@resume/services/yaml2pdfmake/yaml2pdfmake.service';
+import { YAML_TEMPLATE } from '@docs/constants/app';
+import { useDebounce } from '@docs/hooks/use-debounce';
+import { yaml2pdfMake } from '@docs/services/yaml2pdfmake/yaml2pdfmake.service';
 import { NextPage } from 'next';
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
