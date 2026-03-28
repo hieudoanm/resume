@@ -29,14 +29,12 @@
     "test": "jest",
     "prebuild": "rimraf .next ../../docs",
     "build": "next build --turbopack",
-    "postbuild": "touch ../../docs/.nojekyll",
-    "build:tauri": "tauri build",
-    "build:android": "rimraf mobile/android && cap add android",
-    "build:ios": "rimraf mobile/ios && cap add ios",
-    "build:mobile": "pnpm run build:android && pnpm run build:ios",
+    "postbuild": "sh scripts/sh/post-build.sh",
     "prestart": "kill-port 3000",
     "start": "next start",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "dev:desktop": "tauri dev",
+    "build:desktop": "tauri build"
   },
   "dependencies": {
     "@capacitor/android": "8.3.0",
