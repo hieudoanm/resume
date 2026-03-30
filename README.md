@@ -39,6 +39,9 @@ Docs is a focused project in this monorepo that delivers a practical tool with a
 - 💻 [CLI](https://github.com/hieudoanm/docs/releases)
 - 📱 [Mobile](https://github.com/hieudoanm/docs/releases)
 - 🖥️ [Desktop](https://github.com/hieudoanm/docs/releases)
+  - 🍎 [MacOS](https://github.com/hieudoanm/docs/releases/tag/macos-latest)
+  - 🐧 [Ubuntu](https://github.com/hieudoanm/docs/releases/tag/ubuntu-latest)
+  - 🪟 [Windows](https://github.com/hieudoanm/docs/releases/tag/windows-latest)
 
 ## 🛠️ 5. Development Stack
 
