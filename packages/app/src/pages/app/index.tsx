@@ -1,165 +1,174 @@
-'use client';
-
-import { YAML_TEMPLATE } from '@docs/constants/app';
-import { useDebounce } from '@docs/hooks/use-debounce';
-import { yaml2pdfMake } from '@docs/services/yaml2pdfmake/yaml2pdfmake.service';
 import { NextPage } from 'next';
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
-(pdfMake as any).vfs = pdfFonts.vfs;
-
-type ParseResult = { ok: true; doc: unknown } | { ok: false; error: string };
+const APPS = [
+  {
+    id: 'workspace-docs',
+    href: '/app/docs',
+    title: 'Docs',
+    subtitle: 'Markdown Editor',
+    description:
+      'Convert Markdown directly to slides in one click. Supports LaTeX, charts, themes, and exports to PDF.',
+    meta: 'Markdown · LaTeX · Charts',
+    symbol: '📝',
+    symbolClass: 'text-[4.5rem] font-serif font-bold leading-none',
+  },
+  {
+    id: 'workspace-slides',
+    href: '/app/slides',
+    title: 'Slides',
+    subtitle: 'Presentation',
+    description:
+      'Generate presentation slides from Markdown. Supports LaTeX, charts, themes, and exports to PDF.',
+    meta: 'Markdown · YAML · PDF',
+    symbol: '📊',
+    symbolClass: 'text-[4.5rem] font-serif font-bold leading-none',
+  },
+];
 
 const AppPage: NextPage = () => {
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
-
-  const [{ yaml }, setState] = useState<{ yaml: string }>({
-    yaml: YAML_TEMPLATE,
-  });
-
-  const debouncedYaml = useDebounce(yaml, 500);
-
-  /* ============================
-     YAML VALIDATION
-  ============================ */
-
-  const parseResult: ParseResult = useMemo(() => {
-    try {
-      const doc = yaml2pdfMake(debouncedYaml);
-      return { ok: true, doc };
-    } catch (err) {
-      return {
-        ok: false,
-        error: err instanceof Error ? err.message : 'Invalid YAML structure',
-      };
-    }
-  }, [debouncedYaml]);
-
-  /* ============================
-     PDF RENDER
-  ============================ */
-  useEffect(() => {
-    if (!parseResult.ok) return;
-
-    let cancelled = false;
-
-    (async () => {
-      const blob = await pdfMake.createPdf(parseResult.doc as any).getBlob();
-
-      if (cancelled) return;
-
-      const url = URL.createObjectURL(blob);
-      if (iframeRef.current) {
-        iframeRef.current.src = url;
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [parseResult]);
-
-  /* ============================
-     UI
-  ============================ */
+  const router = useRouter();
+  const [hovered, setHovered] = useState<string | null>(null);
 
   return (
     <div
-      className="bg-base-100 text-base-content min-h-screen font-sans"
-      data-theme="luxury">
-      {/* ── NAV ── */}
-      <div className="navbar bg-base-100/85 border-base-300 sticky top-0 z-50 border-b px-6 backdrop-blur-xl md:px-12">
-        <div className="navbar-start">
-          <span className="text-primary font-serif text-2xl font-bold tracking-widest">
-            Resume
-          </span>
+      data-theme="luxury"
+      className="bg-base-100 relative flex min-h-screen w-screen flex-col items-center justify-center overflow-hidden pt-16 pb-14">
+      {/* Vignette */}
+      <div
+        className="pointer-events-none fixed inset-0 z-0"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.75) 100%)',
+        }}
+      />
+
+      {/* Top gold rule */}
+      <div className="via-primary fixed top-0 right-0 left-0 z-10 h-[3px] bg-gradient-to-r from-transparent to-transparent" />
+
+      {/* Header */}
+      <div className="relative z-10 mb-16 flex flex-col items-center gap-3 text-center">
+        <span className="text-primary/40 text-[0.55rem] tracking-[0.5em] uppercase">
+          Workspace Toolkit
+        </span>
+        <h1 className="text-base-content font-serif text-4xl font-bold tracking-wide">
+          Workspace Apps
+        </h1>
+        <div className="mt-1 flex items-center gap-3">
+          <div className="bg-primary/30 h-px w-12" />
+          <div className="bg-primary h-1 w-1 rounded-full" />
+          <div className="bg-primary/30 h-px w-12" />
         </div>
-        <div className="navbar-end">
-          <button className="btn btn-primary btn-sm">Export PDF</button>
-        </div>
+        <p className="text-base-content/40 mt-1 text-[0.65rem] tracking-[0.2em] uppercase">
+          Select a tool to begin
+        </p>
       </div>
 
-      {/* ── HERO ── */}
-      <section className="relative mx-auto max-w-5xl px-6 py-16 text-center md:px-12">
-        <div className="bg-primary/5 pointer-events-none absolute top-0 left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full blur-3xl" />
+      {/* Cards */}
+      <div className="relative z-10 grid w-full max-w-5xl grid-cols-1 gap-px px-6 sm:grid-cols-2 lg:grid-cols-3">
+        {APPS.map((app, i) => {
+          const isHovered = hovered === app.id;
+          return (
+            <button
+              key={app.id}
+              onClick={() => router.push(app.href)}
+              onMouseEnter={() => setHovered(app.id)}
+              onMouseLeave={() => setHovered(null)}
+              className={[
+                'group relative flex flex-col items-center justify-between gap-8',
+                'w-full cursor-pointer px-8 py-10 text-center',
+                'border-primary/10 border transition-all duration-500',
+                'focus-visible:ring-primary outline-none focus-visible:ring-1',
+                isHovered
+                  ? 'bg-primary/[0.06] border-primary/30'
+                  : 'bg-base-100/40 hover:bg-primary/[0.04]',
+                i === 0 ? 'sm:rounded-l-none' : '',
+                i === APPS.length - 1 ? 'sm:rounded-r-none' : '',
+              ].join(' ')}>
+              {/* Number */}
+              <span className="text-primary/20 self-start text-[0.5rem] tracking-[0.4em] uppercase">
+                0{i + 1}
+              </span>
 
-        <p className="text-primary mb-4 text-xs tracking-[0.2em] uppercase">
-          Document builder
-        </p>
-
-        <h1 className="mb-6 font-serif text-5xl leading-tight font-black md:text-6xl">
-          Build resumes
-          <br />
-          with <span className="text-primary">precision</span>
-        </h1>
-
-        <p className="text-base-content/60 mx-auto max-w-xl text-base md:text-lg">
-          Write structured YAML and generate beautifully formatted PDFs in
-          real-time. Fast, flexible, and developer-friendly.
-        </p>
-      </section>
-
-      <div className="border-base-300 mx-6 border-t md:mx-12" />
-
-      {/* ── MAIN ── */}
-      <section className="mx-auto max-w-6xl px-6 py-12 md:px-12">
-        <div className="grid h-[70vh] gap-6 md:grid-cols-2">
-          {/* YAML Editor */}
-          <div className="bg-base-200 border-base-300 flex flex-col overflow-hidden rounded-2xl border">
-            <div className="border-base-300 text-base-content/50 border-b px-5 py-3 text-sm">
-              YAML Editor
-            </div>
-
-            {!parseResult.ok && (
-              <div className="border-error/30 bg-error/10 text-error border-b px-5 py-3 text-sm">
-                <strong>Error:</strong> {parseResult.error}
+              {/* Symbol */}
+              <div
+                className={[
+                  'text-base-content transition-all duration-500',
+                  isHovered
+                    ? 'text-primary scale-110 opacity-90'
+                    : 'opacity-25',
+                ].join(' ')}>
+                <span className={app.symbolClass}>{app.symbol}</span>
               </div>
-            )}
 
-            <textarea
-              className={`flex-1 resize-none bg-transparent px-5 py-4 font-mono text-sm outline-none ${
-                !parseResult.ok ? 'bg-error/5' : ''
-              }`}
-              value={yaml}
-              onChange={(e) =>
-                setState((prev) => ({ ...prev, yaml: e.target.value }))
-              }
-              spellCheck={false}
-            />
-          </div>
+              {/* Text */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-0.5">
+                  <h2 className="text-base-content font-serif text-lg font-bold tracking-wider">
+                    {app.title}
+                  </h2>
+                  <span className="text-primary/60 text-[0.6rem] tracking-[0.3em] uppercase">
+                    {app.subtitle}
+                  </span>
+                </div>
 
-          {/* PDF Preview */}
-          <div className="bg-base-200 border-base-300 relative flex flex-col overflow-hidden rounded-2xl border">
-            <div className="border-base-300 text-base-content/50 border-b px-5 py-3 text-sm">
-              Preview
-            </div>
+                <div className="bg-primary/15 my-1 h-px w-8" />
 
-            {!parseResult.ok && (
-              <div className="bg-base-200/80 text-base-content/60 absolute inset-0 z-10 flex items-center justify-center text-sm">
-                Fix YAML errors to update preview
+                <p className="text-base-content/40 max-w-[180px] text-[0.65rem] leading-relaxed tracking-wide">
+                  {app.description}
+                </p>
+
+                <span className="text-primary/30 mt-1 text-[0.55rem] tracking-[0.2em] uppercase">
+                  {app.meta}
+                </span>
               </div>
-            )}
 
-            <iframe
-              ref={iframeRef}
-              title="Resume Preview"
-              className="w-full flex-1"
-            />
-          </div>
-        </div>
-      </section>
+              {/* CTA */}
+              <div
+                className={[
+                  'flex items-center gap-2 transition-all duration-300',
+                  isHovered
+                    ? 'translate-y-0 opacity-100'
+                    : 'translate-y-1 opacity-0',
+                ].join(' ')}>
+                <span className="text-primary text-[0.6rem] tracking-[0.3em] uppercase">
+                  Begin
+                </span>
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 8h8M8 4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-primary"
+                  />
+                </svg>
+              </div>
 
-      <div className="border-base-300 mx-6 border-t md:mx-12" />
+              {/* Hover border glow bottom */}
+              <div
+                className={[
+                  'via-primary absolute right-0 bottom-0 left-0 h-[2px] bg-gradient-to-r from-transparent to-transparent transition-all duration-500',
+                  isHovered ? 'opacity-100' : 'opacity-0',
+                ].join(' ')}
+              />
+            </button>
+          );
+        })}
+      </div>
 
-      {/* ── FOOTER ── */}
-      <footer className="py-12 text-center">
-        <p className="text-primary mb-2 font-serif text-2xl">Resume Builder</p>
-        <p className="text-base-content/40 text-sm">
-          Structured writing · Beautiful output · Inspired by Forma
+      {/* Footer note */}
+      <div className="relative z-10 mt-12 text-center">
+        <p className="text-base-content/20 text-[0.5rem] tracking-[0.25em] uppercase">
+          Control time · Calculate rating · Study openings · Explore positions ·
+          Analyze with engine · Generate visuals
         </p>
-      </footer>
+      </div>
+
+      {/* Bottom gold rule */}
+      <div className="via-primary fixed right-0 bottom-0 left-0 z-10 h-[3px] bg-gradient-to-r from-transparent to-transparent" />
     </div>
   );
 };
