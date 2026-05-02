@@ -2,7 +2,18 @@ import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-const APPS = [
+type App = {
+  id: string;
+  href: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  meta: string;
+  symbol: string;
+  symbolClass: string;
+};
+
+const APPS: App[] = [
   {
     id: 'workspace-docs',
     href: '/app/docs',
@@ -12,6 +23,17 @@ const APPS = [
       'Convert Markdown directly to slides in one click. Supports LaTeX, charts, themes, and exports to PDF.',
     meta: 'Markdown · LaTeX · Charts',
     symbol: '📝',
+    symbolClass: 'text-[4.5rem] font-serif font-bold leading-none',
+  },
+  {
+    id: 'workspace-sheets',
+    href: '/app/sheets',
+    title: 'Sheets',
+    subtitle: 'SQLite Editor',
+    description:
+      'Open and edit SQLite databases directly in your browser. Supports SQL queries, schema exploration, and data manipulation.',
+    meta: 'SQLite · SQL · CSV',
+    symbol: '📊',
     symbolClass: 'text-[4.5rem] font-serif font-bold leading-none',
   },
   {
