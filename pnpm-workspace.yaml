@@ -1,0 +1,5 @@
+packages:
+  - 'packages/**'
+  - 'crates/resume-core'
+
+minimumReleaseAge: 0

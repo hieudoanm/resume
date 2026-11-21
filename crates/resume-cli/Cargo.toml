@@ -1,0 +1,20 @@
+[package]
+name = "resume-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "CLI to generate a resume from YAML to Markdown, HTML and PDF"
+
+[[bin]]
+name = "resume"
+path = "src/main.rs"
+
+[dependencies]
+resume-core = { path = "../resume-core" }
+clap.workspace = true
+anyhow.workspace = true
+axum.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tempfile = "=3.27.0"

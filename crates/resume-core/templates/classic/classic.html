@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - {{ resume.personal.fullName }}</title>
+  <style>
+    @page { margin: 40px; size: A4; }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #1f2937;
+      line-height: 1.5;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .job-title {
+      font-size: 13px;
+      color: #334155;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .contact, .websites {
+      text-align: center;
+      font-size: 10px;
+      color: #6b7280;
+    }
+    .contact { margin-bottom: 8px; }
+    .websites { margin-bottom: 20px; }
+    .section-title {
+      color: #334155;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.13);
+      padding-bottom: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    .section { margin-bottom: 14px; }
+    .item { margin-bottom: 10px; }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .primary { font-size: 12px; font-weight: 600; }
+    .right { font-size: 10px; color: #6b7280; }
+    .role {
+      font-style: italic;
+      font-size: 11px;
+      color: #334155;
+      margin-bottom: 2px;
+    }
+    .location { font-size: 10px; color: #6b7280; }
+    .degree { font-size: 11px; color: #334155; }
+    .tech { font-size: 10px; color: #6b7280; margin-bottom: 2px; }
+    .skill-cat { font-size: 10.5px; font-weight: 700; color: #334155; }
+    .skill-items { font-size: 10.5px; }
+    .skill-row { margin-bottom: 3px; }
+    .cred { font-size: 10.5px; margin-bottom: 4px; }
+    .lang { font-size: 10.5px; margin-right: 16px; }
+    .interests { font-size: 10.5px; }
+    p { font-size: 11px; margin: 3px 0; }
+    ul { margin: 4px 0 0 16px; padding: 0; }
+    li { font-size: 11px; margin-bottom: 2px; }
+  </style>
+</head>
+<body>
+  <h1>{{ resume.personal.fullName }}</h1>
+  <div class="job-title">{{ resume.personal.jobTitle }}</div>
+  <div class="contact">
+    {% if resume.contact.email %}{{ resume.contact.email }} • {% endif %}
+    {% if resume.contact.phone %}{{ resume.contact.phone }} • {% endif %}
+    {% if resume.contact.address %}{{ resume.contact.address }}{% endif %}
+  </div>
+  <div class="websites">
+    {% if resume.websites.website %}{{ resume.websites.website }}{% endif %}
+    {% if resume.websites.linkedin %} • {{ resume.websites.linkedin }}{% endif %}
+    {% if resume.websites.github %} • {{ resume.websites.github }}{% endif %}
+  </div>
+
+  {% if resume.summary %}
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p>{{ resume.summary }}</p>
+  </div>
+  {% endif %}
+
+  {% if resume.experience %}
+  <div class="section">
+    <div class="section-title">Experience</div>
+    {% for experience in resume.experience %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ experience.company }}</strong></div>
+        <div class="right">{{ experience.startDate }} – {{ experience.endDate }}</div>
+      </div>
+      <div class="role">{{ experience.role }}</div>
+      {% if experience.location %}<div class="location">{{ experience.location }}</div>{% endif %}
+      {% if experience.description %}<p>{{ description(experience.description) }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.education %}
+  <div class="section">
+    <div class="section-title">Education</div>
+    {% for education in resume.education %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ education.school }}</strong></div>
+        <div class="right">{{ education.startDate }} – {{ education.endDate }}</div>
+      </div>
+      <div class="degree">{{ education.degree }}{% if education.field %} in {{ education.field }}{% endif %}</div>
+      {% if education.description %}<p>{{ description(education.description) }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.projects %}
+  <div class="section">
+    <div class="section-title">Projects</div>
+    {% for project in resume.projects %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ project.name }}</strong></div>
+        <div class="right">{{ project.organization }}</div>
+      </div>
+      {% if project.technologies %}<div class="tech">{{ project.technologies }}</div>{% endif %}
+      {% if project.description %}<p>{{ description(project.description) }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.skills %}
+  <div class="section">
+    <div class="section-title">Skills</div>
+    {% for skill in resume.skills %}
+    <div class="skill-row">
+      <span class="skill-cat">{{ skill.category }}: </span><span class="skill-items">{{ skill.items }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.certifications %}
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    {% for certification in resume.certifications %}<div class="cred"><strong>{{ certification.name }}</strong>{% if certification.issuer %} — {{ certification.issuer }}{% endif %}{% if certification.date %} ({{ certification.date }}){% endif %}</div>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.languages %}
+  <div class="section">
+    <div class="section-title">Languages</div>
+    {% for language in resume.languages %}<span class="lang"><strong>{{ language.name }}</strong>{% if language.proficiency %} — {{ language.proficiency }}{% endif %}</span>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.interests %}
+  <div class="section">
+    <div class="section-title">Interests</div>
+    <div class="interests">{{ resume.interests }}</div>
+  </div>
+  {% endif %}
+</body>
+</html>

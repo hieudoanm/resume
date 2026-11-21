@@ -1,0 +1,209 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cli-quality:
+    name: CLI - Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2.9.3
+
+      - name: Rust check
+        run: cargo check --workspace --all-targets
+
+      - name: Rust fmt
+        run: cargo fmt --all -- --check
+
+      - name: Rust clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Run Rust tests
+        run: cargo test --workspace
+
+  cli-build:
+    name: CLI - Build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    # Release binaries are only needed for the master-branch release job;
+    # PRs are covered by the `cli-quality` job.
+    if: github.event_name != 'pull_request'
+    needs: cli-quality
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2.9.3
+
+      - name: Build release binary
+        run: cargo build --release -p resume-cli
+
+      # Rename to the Rust target triple so the three OS artifacts don't
+      # collide when merged into the release assets.
+      - name: Rename binary for release
+        shell: bash
+        run: |
+          case "${{ matrix.os }}" in
+            ubuntu-latest) mv target/release/resume resume-x86_64-unknown-linux-gnu ;;
+            macos-latest) mv target/release/resume resume-aarch64-apple-darwin ;;
+            windows-latest) mv target/release/resume.exe resume-x86_64-pc-windows-msvc.exe ;;
+          esac
+
+      - name: Upload CLI binary
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: resume-cli-${{ matrix.os }}
+          path: resume-*
+          if-no-files-found: error
+          retention-days: 7
+
+  release:
+    name: Release
+    needs:
+      - cli-build
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v8.0.2
+        with:
+          path: dist
+          pattern: resume-cli-*
+          merge-multiple: true
+
+      - name: Delete existing latest release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          git push origin :refs/tags/latest || true
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v3.0.4
+        with:
+          tag_name: latest
+          name: resume (latest)
+          body_path: RELEASE.md
+          files: dist/*
+
+  landing-build:
+    name: Landing - Build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6.1.1
+        with:
+          version: 12.21.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2.9.3
+
+      - name: Build resume-core wasm package
+        run: make -C crates/resume-core build-wasm
+
+      - name: Install workspace dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck landing
+        run: pnpm --filter @resume/landing run typecheck
+
+      - name: Lint landing
+        run: pnpm --filter @resume/landing run lint
+
+      - name: Build landing (Next.js static export)
+        run: pnpm --filter @resume/landing run build
+
+      - name: Delete stale Pages artifacts
+        uses: actions/github-script@v9.0.0
+        with:
+          script: |
+            const { data } = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId,
+            });
+            for (const artifact of data.artifacts.filter((a) => a.name === "github-pages" && !a.expired)) {
+              await github.rest.actions.deleteArtifact({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: artifact.id,
+              });
+            }
+
+      - name: Upload landing artifact
+        if: github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: packages/landing/out
+
+  landing-deploy:
+    name: Landing - Deploy
+    needs: landing-build
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5.0.1

@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@plugin 'daisyui' {
+  themes: resume --default;
+}
+
+@plugin 'daisyui/theme' {
+  name: 'resume';
+  default: true;
+  prefersdark: false;
+  color-scheme: 'light';
+  --color-base-100: #ffffff;
+  --color-base-200: #f8fafc;
+  --color-base-300: #e2e8f0;
+  --color-base-content: #0f172a;
+  --color-primary: #0f766e;
+  --color-primary-content: #ffffff;
+  --color-secondary: #115e59;
+  --color-secondary-content: #ffffff;
+  --color-accent: #2dd4bf;
+  --color-accent-content: #042f2e;
+  --color-neutral: #1e293b;
+  --color-neutral-content: #ffffff;
+  --color-info: #2563eb;
+  --color-info-content: #ffffff;
+  --color-success: #16a34a;
+  --color-success-content: #ffffff;
+  --color-warning: #d97706;
+  --color-warning-content: #ffffff;
+  --color-error: #dc2626;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* ---------- markdown prose (Tailwind Typography, literal theme values) ---------- */
+
+.prose {
+  --tw-prose-body: #111827;
+  --tw-prose-headings: #111827;
+  --tw-prose-lead: #6b7280;
+  --tw-prose-links: #0f766e;
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #d1d5db;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #6b7280;
+  --tw-prose-quote-borders: #0f766e;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-code: #111827;
+  --tw-prose-pre-code: #e8e8e8;
+  --tw-prose-pre-bg: #111827;
+  --tw-prose-th-borders: #e5e7eb;
+  --tw-prose-td-borders: #e5e7eb;
+}

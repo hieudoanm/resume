@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <rect width="1280" height="640" rx="32" fill="#ffffff"/>
+
+  <!-- Centered content group at (640, 320) -->
+  <g transform="translate(640, 320)" text-anchor="middle">
+    <!-- Logo icon, left of center -->
+    <g transform="translate(-470, -160) scale(0.625)">
+      <rect width="512" height="512" rx="64" fill="#ffffff"/>
+      <rect x="96" y="72" width="320" height="368" rx="24" fill="none" stroke="#0f766e" stroke-width="20"/>
+      <line x1="136" y1="144" x2="376" y2="144" stroke="#0f766e" stroke-width="20" stroke-linecap="round"/>
+      <line x1="136" y1="200" x2="376" y2="200" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+      <line x1="136" y1="248" x2="376" y2="248" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+      <line x1="136" y1="320" x2="296" y2="320" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+      <line x1="136" y1="368" x2="376" y2="368" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <!-- Text block, right of center -->
+    <g transform="translate(90, 0)" text-anchor="middle">
+      <text y="-30" font-family="system-ui, -apple-system, sans-serif" font-size="96" font-weight="800" fill="#0f766e" letter-spacing="-3">resume</text>
+      <text y="50" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#000000">Resume in YAML, PDF out — locally</text>
+      <text y="130" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#000000">Rust CLI · 40+ templates · MCP + HTTP server</text>
+    </g>
+  </g>
+</svg>

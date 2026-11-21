@@ -1,0 +1,10 @@
+/* TEAM */
+Hieu Doan — https://hieudoanm.github.io
+
+/* SITE */
+Last update: 2026/11/21
+Language: English
+Doctype: HTML5
+
+/* COMPONENTS */
+HTML5, Next.js, React, TypeScript, Tailwind CSS, DaisyUI

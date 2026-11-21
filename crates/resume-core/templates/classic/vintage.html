@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - {{ resume.personal.fullName }}</title>
+  <style>
+    @page { margin: 40px; size: A4; }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      font-family: Garamond, "Times New Roman", serif;
+      color: #1f2937;
+      line-height: 1.5;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      letter-spacing: 1px;
+    }
+    .job-title {
+      font-size: 12px;
+      font-style: italic;
+      color: #0f766e;
+      margin-bottom: 10px;
+    }
+    .frame {
+      border-top: 1px solid #6b7280;
+      border-bottom: 1px solid #6b7280;
+      display: inline-block;
+      padding: 4px 18px;
+      margin-bottom: 8px;
+    }
+    .contact, .websites {
+      text-align: center;
+      font-size: 9.5px;
+      color: #6b7280;
+    }
+    .contact { margin-top: 8px; margin-bottom: 10px; }
+    .section-title {
+      color: #0f766e;
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .section { margin-bottom: 14px; }
+    .item { margin-bottom: 11px; }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .primary { font-size: 12.5px; }
+    .right { font-size: 10px; color: #6b7280; }
+    .role { font-size: 11px; font-style: italic; color: #0f766e; margin-bottom: 4px; }
+    .degree { font-size: 11px; color: #0f766e; }
+    .tech { font-size: 10px; color: #6b7280; margin-bottom: 2px; }
+    .skill-cat { font-size: 10.5px; font-weight: 700; color: #0f766e; }
+    .skill-items { font-size: 10.5px; }
+    .skill-row { margin-bottom: 3px; }
+    .cred { font-size: 10.5px; margin-bottom: 4px; }
+    .lang { font-size: 10.5px; }
+    .interests { font-size: 10.5px; }
+    p { font-size: 11px; margin: 3px 0; }
+    ul { margin: 0; padding-left: 16px; font-size: 10.5px; line-height: 1.5; }
+    li { font-size: 10.5px; margin-bottom: 2px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ resume.personal.fullName }}</h1>
+    <div class="job-title">{{ resume.personal.jobTitle }}</div>
+    <div class="frame"></div>
+    <div class="contact">
+      {% if resume.contact.email %}{{ resume.contact.email }} • {% endif %}
+      {% if resume.contact.phone %}{{ resume.contact.phone }} • {% endif %}
+      {% if resume.contact.address %}{{ resume.contact.address }}{% endif %}
+    </div>
+    <div class="websites">
+      {% if resume.websites.website %}{{ resume.websites.website }}{% endif %}
+      {% if resume.websites.linkedin %} • {{ resume.websites.linkedin }}{% endif %}
+      {% if resume.websites.github %} • {{ resume.websites.github }}{% endif %}
+    </div>
+  </header>
+
+  {% if resume.summary %}
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p>{{ resume.summary }}</p>
+  </div>
+  {% endif %}
+
+  {% if resume.experience %}
+  <div class="section">
+    <div class="section-title">Experience</div>
+    {% for experience in resume.experience %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ experience.company }}</strong></div>
+        <div class="right">{{ experience.startDate }} – {{ experience.endDate }}</div>
+      </div>
+      <div class="role">{{ experience.role }}{% if experience.location %} · {{ experience.location }}{% endif %}</div>
+      {% if experience.description %}<p>{{ description(experience.description) }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.education %}
+  <div class="section">
+    <div class="section-title">Education</div>
+    {% for education in resume.education %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ education.school }}</strong></div>
+        <div class="right">{{ education.startDate }} – {{ education.endDate }}</div>
+      </div>
+      <div class="degree">{{ education.degree }}{% if education.field %} in {{ education.field }}{% endif %}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.projects %}
+  <div class="section">
+    <div class="section-title">Projects</div>
+    {% for project in resume.projects %}
+    <div class="item">
+      <div class="header">
+        <div class="primary"><strong>{{ project.name }}</strong></div>
+        <div class="right">{{ project.organization }}</div>
+      </div>
+      {% if project.technologies %}<div class="tech">{{ project.technologies }}</div>{% endif %}
+      <p>{{ description(project.description) }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.skills %}
+  <div class="section">
+    <div class="section-title">Skills</div>
+    {% for skill in resume.skills %}
+    <div class="skill-row">
+      <span class="skill-cat">{{ skill.category }}: </span><span class="skill-items">{{ skill.items }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.certifications %}
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    {% for certification in resume.certifications %}<div class="cred"><strong>{{ certification.name }}</strong>{% if certification.issuer %} — {{ certification.issuer }}{% endif %}{% if certification.date %} ({{ certification.date }}){% endif %}</div>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.languages %}
+  <div class="section">
+    <div class="section-title">Languages</div>
+    {% for language in resume.languages %}<div class="lang">{{ language.name }}{% if language.proficiency %} ({{ language.proficiency }}){% endif %}</div>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if resume.interests %}
+  <div class="section">
+    <div class="section-title">Interests</div>
+    <div class="interests">{{ resume.interests }}</div>
+  </div>
+  {% endif %}
+</body>
+</html>

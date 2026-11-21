@@ -1,0 +1,10 @@
+# resume
+
+> Hieu Doan's resume and resume editor. `/` renders the resume;
+> `/editor` is a client-side resume editor that produces YAML/JSON matching the
+> `resume-core` schema (camelCase fields: personal, contact, websites,
+> summary, experience, education, projects, skills, certifications,
+> languages, interests, references).
+
+- Site: https://hieudoanm.github.io/resume/
+- Source: https://github.com/hieudoanm/resume
