@@ -21,3 +21,4 @@ next-env.d.ts
 
 # wasm-bindgen output (regenerate with scripts/build-wasm.sh)
 crates/resume-core/pkg
+.tracers-cache/
