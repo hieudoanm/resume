@@ -3,8 +3,8 @@
   "tracersVersion": "0.0.1",
   "repository": {
     "id": "repository:.",
-    "name": "repository",
-    "root": ".",
+    "name": "resume",
+    "root": "/Users/hieudoan/git/github.com/hieudoanm/resume",
     "fileCount": 65,
     "languageCount": 23
   },
