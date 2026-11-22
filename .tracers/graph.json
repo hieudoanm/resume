@@ -2008,6 +2008,48 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:axum::Html",
+      "kind": "external_symbol",
+      "name": "Html",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:axum::Json",
+      "kind": "external_symbol",
+      "name": "Json",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:axum::Query",
+      "kind": "external_symbol",
+      "name": "Query",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:axum::Response",
+      "kind": "external_symbol",
+      "name": "Response",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:axum::State",
+      "kind": "external_symbol",
+      "name": "State",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:axum::StatusCode",
+      "kind": "external_symbol",
+      "name": "StatusCode",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:minijinja::Environment",
+      "kind": "external_symbol",
+      "name": "Environment",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:serde_json.from_slice",
       "kind": "external_symbol",
       "name": "from_slice",
@@ -2029,6 +2071,12 @@
       "id": "external:rust:serde_json.to_string_pretty",
       "kind": "external_symbol",
       "name": "to_string_pretty",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json::Value",
+      "kind": "external_symbol",
+      "name": "Value",
       "language": "rust"
     },
     {
@@ -2137,6 +2185,12 @@
       "id": "external:rust:std::clone",
       "kind": "external_symbol",
       "name": "clone",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::cloned",
+      "kind": "external_symbol",
+      "name": "cloned",
       "language": "rust"
     },
     {
@@ -2560,6 +2614,54 @@
       "language": "rust"
     },
     {
+      "id": "external:tsx:@/lib/resume.Certification",
+      "kind": "external_symbol",
+      "name": "Certification",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.Education",
+      "kind": "external_symbol",
+      "name": "Education",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.Experience",
+      "kind": "external_symbol",
+      "name": "Experience",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.Language",
+      "kind": "external_symbol",
+      "name": "Language",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.Project",
+      "kind": "external_symbol",
+      "name": "Project",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.Reference",
+      "kind": "external_symbol",
+      "name": "Reference",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "external_symbol",
+      "name": "ResumeData",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:@/lib/resume.SkillGroup",
+      "kind": "external_symbol",
+      "name": "SkillGroup",
+      "language": "tsx"
+    },
+    {
       "id": "external:tsx:Blob",
       "kind": "external_symbol",
       "name": "Blob",
@@ -2587,18 +2689,6 @@
       "id": "external:tsx:lib::Date",
       "kind": "external_symbol",
       "name": "Date",
-      "language": "tsx"
-    },
-    {
-      "id": "external:tsx:lib::FC",
-      "kind": "external_symbol",
-      "name": "FC",
-      "language": "tsx"
-    },
-    {
-      "id": "external:tsx:lib::ReactNode",
-      "kind": "external_symbol",
-      "name": "ReactNode",
       "language": "tsx"
     },
     {
@@ -2659,6 +2749,36 @@
       "id": "external:tsx:lib::trim",
       "kind": "external_symbol",
       "name": "trim",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:next.Metadata",
+      "kind": "external_symbol",
+      "name": "Metadata",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:next.NextPage",
+      "kind": "external_symbol",
+      "name": "NextPage",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:react.FC",
+      "kind": "external_symbol",
+      "name": "FC",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:react.MouseEventHandler",
+      "kind": "external_symbol",
+      "name": "MouseEventHandler",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:react.ReactNode",
+      "kind": "external_symbol",
+      "name": "ReactNode",
       "language": "tsx"
     },
     {
@@ -2761,6 +2881,12 @@
       "id": "external:typescript:lib::trim",
       "kind": "external_symbol",
       "name": "trim",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:next.NextConfig",
+      "kind": "external_symbol",
+      "name": "NextConfig",
       "language": "typescript"
     },
     {
@@ -2882,12 +3008,6 @@
       "kind": "external_symbol",
       "name": "react-icons/pi",
       "language": "tsx"
-    },
-    {
-      "id": "external:unknown:resume_core",
-      "kind": "external_symbol",
-      "name": "resume_core",
-      "language": "rust"
     },
     {
       "id": "external:unknown:serde",
@@ -13015,63 +13135,9 @@
       "language": "python"
     },
     {
-      "id": "unresolved:rust:Environment",
-      "kind": "unknown",
-      "name": "Environment",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Html",
-      "kind": "unknown",
-      "name": "Html",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:JsError",
       "kind": "unknown",
       "name": "JsError",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Json",
-      "kind": "unknown",
-      "name": "Json",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Query",
-      "kind": "unknown",
-      "name": "Query",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Response",
-      "kind": "unknown",
-      "name": "Response",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:ResumeData",
-      "kind": "unknown",
-      "name": "ResumeData",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:State",
-      "kind": "unknown",
-      "name": "State",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:StatusCode",
-      "kind": "unknown",
-      "name": "StatusCode",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Value",
-      "kind": "unknown",
-      "name": "Value",
       "language": "rust"
     },
     {
@@ -13120,12 +13186,6 @@
       "id": "unresolved:rust:build",
       "kind": "unknown",
       "name": "build",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:cloned",
-      "kind": "unknown",
-      "name": "cloned",
       "language": "rust"
     },
     {
@@ -13333,72 +13393,6 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:tsx:Certification",
-      "kind": "unknown",
-      "name": "Certification",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Education",
-      "kind": "unknown",
-      "name": "Education",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Experience",
-      "kind": "unknown",
-      "name": "Experience",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Language",
-      "kind": "unknown",
-      "name": "Language",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Metadata",
-      "kind": "unknown",
-      "name": "Metadata",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:MouseEventHandler",
-      "kind": "unknown",
-      "name": "MouseEventHandler",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:NextPage",
-      "kind": "unknown",
-      "name": "NextPage",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Project",
-      "kind": "unknown",
-      "name": "Project",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:Reference",
-      "kind": "unknown",
-      "name": "Reference",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:ResumeData",
-      "kind": "unknown",
-      "name": "ResumeData",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:SkillGroup",
-      "kind": "unknown",
-      "name": "SkillGroup",
-      "language": "tsx"
-    },
-    {
       "id": "unresolved:tsx:click",
       "kind": "unknown",
       "name": "click",
@@ -13541,12 +13535,6 @@
       "kind": "unknown",
       "name": "updater",
       "language": "tsx"
-    },
-    {
-      "id": "unresolved:typescript:NextConfig",
-      "kind": "unknown",
-      "name": "NextConfig",
-      "language": "typescript"
     },
     {
       "id": "unresolved:typescript:getHours",
@@ -16469,9 +16457,9 @@
     },
     {
       "source": "file:crates/resume-cli/examples/render.rs",
-      "target": "external:unknown:resume_core",
+      "target": "file:crates/resume-core/src/lib.rs",
       "kind": "imports",
-      "status": "resolved_external",
+      "status": "resolved_internal",
       "origin": "import",
       "sites": [
         {
@@ -16560,27 +16548,6 @@
     },
     {
       "source": "file:crates/resume-cli/src/cmd_init.rs",
-      "target": "external:unknown:resume_core",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 5,
-            "column": 1,
-            "byte": 75
-          },
-          "end": {
-            "line": 5,
-            "column": 38,
-            "byte": 112
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:crates/resume-cli/src/cmd_init.rs",
       "target": "external:unknown:std",
       "kind": "imports",
       "status": "resolved_external",
@@ -16596,6 +16563,27 @@
             "line": 3,
             "column": 21,
             "byte": 73
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/cmd_init.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 5,
+            "column": 1,
+            "byte": 75
+          },
+          "end": {
+            "line": 5,
+            "column": 38,
+            "byte": 112
           }
         }
       ]
@@ -16868,27 +16856,6 @@
     },
     {
       "source": "file:crates/resume-cli/src/cmd_md.rs",
-      "target": "external:unknown:resume_core",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 5,
-            "column": 1,
-            "byte": 75
-          },
-          "end": {
-            "line": 5,
-            "column": 51,
-            "byte": 125
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:crates/resume-cli/src/cmd_md.rs",
       "target": "external:unknown:std",
       "kind": "imports",
       "status": "resolved_external",
@@ -16904,6 +16871,27 @@
             "line": 3,
             "column": 21,
             "byte": 73
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/cmd_md.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 5,
+            "column": 1,
+            "byte": 75
+          },
+          "end": {
+            "line": 5,
+            "column": 51,
+            "byte": 125
           }
         }
       ]
@@ -17071,27 +17059,6 @@
     },
     {
       "source": "file:crates/resume-cli/src/cmd_pdf.rs",
-      "target": "external:unknown:resume_core",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 5,
-            "column": 1,
-            "byte": 75
-          },
-          "end": {
-            "line": 5,
-            "column": 54,
-            "byte": 128
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:crates/resume-cli/src/cmd_pdf.rs",
       "target": "external:unknown:std",
       "kind": "imports",
       "status": "resolved_external",
@@ -17128,6 +17095,27 @@
             "line": 7,
             "column": 28,
             "byte": 157
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/cmd_pdf.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 5,
+            "column": 1,
+            "byte": 75
+          },
+          "end": {
+            "line": 5,
+            "column": 54,
+            "byte": 128
           }
         }
       ]
@@ -17372,9 +17360,30 @@
     },
     {
       "source": "file:crates/resume-cli/src/cmd_validate.rs",
-      "target": "external:unknown:resume_core",
+      "target": "external:unknown:std",
       "kind": "imports",
       "status": "resolved_external",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 3,
+            "column": 1,
+            "byte": 53
+          },
+          "end": {
+            "line": 3,
+            "column": 21,
+            "byte": 73
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/cmd_validate.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
       "origin": "import",
       "sites": [
         {
@@ -17393,21 +17402,21 @@
     },
     {
       "source": "file:crates/resume-cli/src/cmd_validate.rs",
-      "target": "external:unknown:std",
+      "target": "file:crates/resume-core/src/validate.rs",
       "kind": "imports",
-      "status": "resolved_external",
+      "status": "resolved_internal",
       "origin": "import",
       "sites": [
         {
           "start": {
-            "line": 3,
+            "line": 5,
             "column": 1,
-            "byte": 53
+            "byte": 75
           },
           "end": {
-            "line": 3,
-            "column": 21,
-            "byte": 73
+            "line": 5,
+            "column": 48,
+            "byte": 122
           }
         }
       ]
@@ -18002,27 +18011,6 @@
     },
     {
       "source": "file:crates/resume-cli/src/pdf.rs",
-      "target": "external:unknown:resume_core",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 2,
-            "column": 1,
-            "byte": 37
-          },
-          "end": {
-            "line": 2,
-            "column": 44,
-            "byte": 80
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:crates/resume-cli/src/pdf.rs",
       "target": "external:unknown:std",
       "kind": "imports",
       "status": "resolved_external",
@@ -18050,6 +18038,27 @@
             "line": 4,
             "column": 27,
             "byte": 126
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/pdf.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 2,
+            "column": 1,
+            "byte": 37
+          },
+          "end": {
+            "line": 2,
+            "column": 44,
+            "byte": 80
           }
         }
       ]
@@ -18245,27 +18254,6 @@
     },
     {
       "source": "file:crates/resume-cli/src/serve.rs",
-      "target": "external:unknown:resume_core",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 13,
-            "column": 1,
-            "byte": 279
-          },
-          "end": {
-            "line": 13,
-            "column": 66,
-            "byte": 344
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:crates/resume-cli/src/serve.rs",
       "target": "external:unknown:serde",
       "kind": "imports",
       "status": "resolved_external",
@@ -18365,6 +18353,27 @@
             "line": 16,
             "column": 23,
             "byte": 396
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-cli/src/serve.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 13,
+            "column": 1,
+            "byte": 279
+          },
+          "end": {
+            "line": 13,
+            "column": 66,
+            "byte": 344
           }
         }
       ]
@@ -18941,6 +18950,27 @@
     },
     {
       "source": "file:crates/resume-core/src/description.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 65,
+            "column": 5,
+            "byte": 1896
+          },
+          "end": {
+            "line": 65,
+            "column": 35,
+            "byte": 1926
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-core/src/description.rs",
       "target": "function:crates/resume-core/src/description.rs::format_description",
       "kind": "exports",
       "status": "resolved_internal",
@@ -19116,6 +19146,69 @@
     },
     {
       "source": "file:crates/resume-core/src/lib.rs",
+      "target": "constant:crates/resume-core/src/load.rs::DEFAULT_RESUME_YAML",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_json",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/load.rs::to_json",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/load.rs::to_yaml",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/markdown.rs::to_markdown",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/templates.rs::list_templates",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/templates.rs::render_html",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "function:crates/resume-core/src/validate.rs::validate",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
       "target": "module:crates/resume-core/src/lib.rs::description",
       "kind": "exports",
       "status": "resolved_internal",
@@ -19208,6 +19301,13 @@
     {
       "source": "file:crates/resume-core/src/lib.rs",
       "target": "module:crates/resume-core/src/lib.rs::wasm",
+      "kind": "exports",
+      "status": "resolved_internal",
+      "origin": "import"
+    },
+    {
+      "source": "file:crates/resume-core/src/lib.rs",
+      "target": "struct:crates/resume-core/src/types.rs::ResumeData",
       "kind": "exports",
       "status": "resolved_internal",
       "origin": "import"
@@ -20910,6 +21010,27 @@
     {
       "source": "file:crates/resume-core/src/wasm.rs",
       "target": "file:crates/resume-core/src/description.rs",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 1,
+            "byte": 248
+          },
+          "end": {
+            "line": 10,
+            "column": 3,
+            "byte": 445
+          }
+        }
+      ]
+    },
+    {
+      "source": "file:crates/resume-core/src/wasm.rs",
+      "target": "file:crates/resume-core/src/lib.rs",
       "kind": "imports",
       "status": "resolved_internal",
       "origin": "import",
@@ -25720,7 +25841,7 @@
     },
     {
       "source": "function:crates/resume-cli/examples/render.rs::main",
-      "target": "external:unresolved:resume_core::parse_resume_yaml",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -26239,7 +26360,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "external:unresolved:resume_core::parse_resume_yaml",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -26260,7 +26381,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "external:unresolved:resume_core::to_markdown",
+      "target": "function:crates/resume-core/src/markdown.rs::to_markdown",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -26710,28 +26831,28 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "external:unresolved:resume_core::list_templates",
+      "target": "function:crates/resume-cli/src/pdf.rs::render_pdf",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
       "sites": [
         {
           "start": {
-            "line": 45,
-            "column": 29,
-            "byte": 1168
+            "line": 53,
+            "column": 15,
+            "byte": 1348
           },
           "end": {
-            "line": 45,
-            "column": 45,
-            "byte": 1184
+            "line": 53,
+            "column": 43,
+            "byte": 1376
           }
         }
       ]
     },
     {
       "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "external:unresolved:resume_core::parse_resume_yaml",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -26752,21 +26873,21 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "function:crates/resume-core/src/templates.rs::list_templates",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
       "sites": [
         {
           "start": {
-            "line": 53,
-            "column": 15,
-            "byte": 1348
+            "line": 45,
+            "column": 29,
+            "byte": 1168
           },
           "end": {
-            "line": 53,
-            "column": 43,
-            "byte": 1376
+            "line": 45,
+            "column": 45,
+            "byte": 1184
           }
         }
       ]
@@ -27163,7 +27284,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
-      "target": "external:unresolved:resume_core::parse_resume_yaml",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -27184,7 +27305,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
-      "target": "external:unresolved:resume_core::validate",
+      "target": "function:crates/resume-core/src/validate.rs::validate",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -27550,9 +27671,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::error_response",
-      "target": "unresolved:rust:Value",
+      "target": "external:rust:serde_json::Value",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -27676,6 +27797,27 @@
             "line": 81,
             "column": 82,
             "byte": 2848
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
+      "target": "external:rust:std::cloned",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 41,
+            "column": 14,
+            "byte": 1166
+          },
+          "end": {
+            "line": 41,
+            "column": 36,
+            "byte": 1188
           }
         }
       ]
@@ -27949,21 +28091,21 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
-      "target": "unresolved:rust:cloned",
-      "kind": "calls",
-      "status": "unresolved",
+      "target": "external:rust:serde_json::Value",
+      "kind": "uses_type",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
           "start": {
-            "line": 41,
+            "line": 31,
             "column": 14,
-            "byte": 1166
+            "byte": 803
           },
           "end": {
-            "line": 41,
-            "column": 36,
-            "byte": 1188
+            "line": 31,
+            "column": 19,
+            "byte": 808
           }
         }
       ]
@@ -27985,27 +28127,6 @@
             "line": 30,
             "column": 51,
             "byte": 772
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
-      "target": "unresolved:rust:Value",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 31,
-            "column": 14,
-            "byte": 803
-          },
-          "end": {
-            "line": 31,
-            "column": 19,
-            "byte": 808
           }
         }
       ]
@@ -28096,6 +28217,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
+      "target": "external:rust:serde_json::Value",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 98,
+            "column": 27,
+            "byte": 3304
+          },
+          "end": {
+            "line": 98,
+            "column": 32,
+            "byte": 3309
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
       "target": "external:rust:std::Write",
       "kind": "uses_type",
       "status": "resolved_external",
@@ -28111,27 +28253,6 @@
             "line": 98,
             "column": 67,
             "byte": 3344
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
-      "target": "unresolved:rust:Value",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 98,
-            "column": 27,
-            "byte": 3304
-          },
-          "end": {
-            "line": 98,
-            "column": 32,
-            "byte": 3309
           }
         }
       ]
@@ -28288,9 +28409,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::response",
-      "target": "unresolved:rust:Value",
+      "target": "external:rust:serde_json::Value",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -28606,9 +28727,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::success_response",
-      "target": "unresolved:rust:Value",
+      "target": "external:rust:serde_json::Value",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -28714,6 +28835,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::write_response",
+      "target": "external:rust:serde_json::Value",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 128,
+            "column": 47,
+            "byte": 4178
+          },
+          "end": {
+            "line": 128,
+            "column": 52,
+            "byte": 4183
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::write_response",
       "target": "external:rust:std::Write",
       "kind": "uses_type",
       "status": "resolved_external",
@@ -28729,27 +28871,6 @@
             "line": 128,
             "column": 39,
             "byte": 4170
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::write_response",
-      "target": "unresolved:rust:Value",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 128,
-            "column": 47,
-            "byte": 4178
-          },
-          "end": {
-            "line": 128,
-            "column": 52,
-            "byte": 4183
           }
         }
       ]
@@ -29032,7 +29153,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
-      "target": "external:unresolved:resume_core::render_html",
+      "target": "function:crates/resume-core/src/templates.rs::render_html",
       "kind": "calls",
       "status": "resolved_internal",
       "origin": "lexical",
@@ -29215,9 +29336,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
-      "target": "unresolved:rust:ResumeData",
+      "target": "struct:crates/resume-core/src/types.rs::ResumeData",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_internal",
       "origin": "syntax",
       "sites": [
         {
@@ -29299,9 +29420,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::error_response",
-      "target": "unresolved:rust:Response",
+      "target": "external:rust:axum::Response",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -29320,9 +29441,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::error_response",
-      "target": "unresolved:rust:StatusCode",
+      "target": "external:rust:axum::StatusCode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -29383,9 +29504,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_health",
-      "target": "unresolved:rust:Json",
+      "target": "external:rust:axum::Json",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -29404,9 +29525,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_health",
-      "target": "unresolved:rust:Value",
+      "target": "external:rust:serde_json::Value",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -29446,9 +29567,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_openapi",
-      "target": "unresolved:rust:Response",
+      "target": "external:rust:axum::Response",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -29461,6 +29582,27 @@
             "line": 261,
             "column": 38,
             "byte": 8092
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
+      "target": "external:rust:std::cloned",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 279,
+            "column": 9,
+            "byte": 8669
+          },
+          "end": {
+            "line": 279,
+            "column": 42,
+            "byte": 8702
           }
         }
       ]
@@ -29575,48 +29717,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "external:unresolved:resume_core::list_templates",
-      "kind": "calls",
-      "status": "resolved_internal",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 279,
-            "column": 9,
-            "byte": 8669
-          },
-          "end": {
-            "line": 279,
-            "column": 25,
-            "byte": 8685
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "external:unresolved:resume_core::parse_resume_json",
-      "kind": "calls",
-      "status": "resolved_internal",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 270,
-            "column": 34,
-            "byte": 8395
-          },
-          "end": {
-            "line": 270,
-            "column": 58,
-            "byte": 8419
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
       "target": "function:crates/resume-cli/src/pdf.rs::render_pdf",
       "kind": "calls",
       "status": "resolved_internal",
@@ -29671,10 +29771,31 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "unresolved:rust:cloned",
+      "target": "function:crates/resume-core/src/load.rs::parse_resume_json",
       "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
+      "status": "resolved_internal",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 270,
+            "column": 34,
+            "byte": 8395
+          },
+          "end": {
+            "line": 270,
+            "column": 58,
+            "byte": 8419
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
+      "target": "function:crates/resume-core/src/templates.rs::list_templates",
+      "kind": "calls",
+      "status": "resolved_internal",
+      "origin": "lexical",
       "sites": [
         {
           "start": {
@@ -29684,8 +29805,8 @@
           },
           "end": {
             "line": 279,
-            "column": 42,
-            "byte": 8702
+            "column": 25,
+            "byte": 8685
           }
         }
       ]
@@ -29713,6 +29834,69 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
+      "target": "external:rust:axum::Query",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 269,
+            "column": 57,
+            "byte": 8317
+          },
+          "end": {
+            "line": 269,
+            "column": 62,
+            "byte": 8322
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
+      "target": "external:rust:axum::Response",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 269,
+            "column": 91,
+            "byte": 8351
+          },
+          "end": {
+            "line": 269,
+            "column": 99,
+            "byte": 8359
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
+      "target": "external:rust:axum::State",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 269,
+            "column": 32,
+            "byte": 8292
+          },
+          "end": {
+            "line": 269,
+            "column": 37,
+            "byte": 8297
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
       "target": "struct:crates/resume-cli/src/serve.rs::PdfQuery",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -29734,51 +29918,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "unresolved:rust:Query",
+      "target": "struct:crates/resume-core/src/types.rs::ResumeData",
       "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 269,
-            "column": 57,
-            "byte": 8317
-          },
-          "end": {
-            "line": 269,
-            "column": 62,
-            "byte": 8322
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "unresolved:rust:Response",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 269,
-            "column": 91,
-            "byte": 8351
-          },
-          "end": {
-            "line": 269,
-            "column": 99,
-            "byte": 8359
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "unresolved:rust:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_internal",
       "origin": "syntax",
       "sites": [
         {
@@ -29791,27 +29933,6 @@
             "line": 270,
             "column": 25,
             "byte": 8386
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::handle_pdf",
-      "target": "unresolved:rust:State",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 269,
-            "column": 32,
-            "byte": 8292
-          },
-          "end": {
-            "line": 269,
-            "column": 37,
-            "byte": 8297
           }
         }
       ]
@@ -29839,9 +29960,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::handle_swagger_ui",
-      "target": "unresolved:rust:Html",
+      "target": "external:rust:axum::Html",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -36904,9 +37025,9 @@
     },
     {
       "source": "function:crates/resume-core/src/templates.rs::env",
-      "target": "unresolved:rust:Environment",
+      "target": "external:rust:minijinja::Environment",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -37093,6 +37214,27 @@
     },
     {
       "source": "function:crates/resume-core/src/templates.rs::render",
+      "target": "external:rust:minijinja::Environment",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 63,
+            "column": 17,
+            "byte": 2006
+          },
+          "end": {
+            "line": 63,
+            "column": 28,
+            "byte": 2017
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-core/src/templates.rs::render",
       "target": "struct:crates/resume-core/src/types.rs::ResumeData",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -37108,27 +37250,6 @@
             "line": 63,
             "column": 63,
             "byte": 2052
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-core/src/templates.rs::render",
-      "target": "unresolved:rust:Environment",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 63,
-            "column": 17,
-            "byte": 2006
-          },
-          "end": {
-            "line": 63,
-            "column": 28,
-            "byte": 2017
           }
         }
       ]
@@ -38449,6 +38570,27 @@
     },
     {
       "source": "function:crates/resume-core/src/wasm.rs::parse",
+      "target": "struct:crates/resume-core/src/types.rs::ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_internal",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 12,
+            "column": 34,
+            "byte": 480
+          },
+          "end": {
+            "line": 12,
+            "column": 44,
+            "byte": 490
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-core/src/wasm.rs::parse",
       "target": "unresolved:rust:JsError",
       "kind": "uses_type",
       "status": "unresolved",
@@ -38464,27 +38606,6 @@
             "line": 12,
             "column": 53,
             "byte": 499
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-core/src/wasm.rs::parse",
-      "target": "unresolved:rust:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 12,
-            "column": 34,
-            "byte": 480
-          },
-          "end": {
-            "line": 12,
-            "column": 44,
-            "byte": 490
           }
         }
       ]
@@ -40798,7 +40919,7 @@
     },
     {
       "source": "function:packages/landing/src/components/editor/ResumePreview.tsx::Description",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -45592,7 +45713,7 @@
     },
     {
       "source": "interface:packages/landing/src/app/layout.tsx::RootLayoutProps",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -45676,7 +45797,7 @@
     },
     {
       "source": "interface:packages/landing/src/components/molecules/SectionHead.tsx::SectionHeadProps",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -47482,6 +47603,27 @@
     },
     {
       "source": "module:crates/resume-core/src/templates.rs",
+      "target": "external:rust:minijinja::Environment",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 14,
+            "column": 29,
+            "byte": 341
+          },
+          "end": {
+            "line": 14,
+            "column": 40,
+            "byte": 352
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:crates/resume-core/src/templates.rs",
       "target": "external:rust:std::OnceLock",
       "kind": "uses_type",
       "status": "resolved_external",
@@ -47497,27 +47639,6 @@
             "line": 14,
             "column": 21,
             "byte": 333
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:crates/resume-core/src/templates.rs",
-      "target": "unresolved:rust:Environment",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 14,
-            "column": 29,
-            "byte": 341
-          },
-          "end": {
-            "line": 14,
-            "column": 40,
-            "byte": 352
           }
         }
       ]
@@ -48301,9 +48422,9 @@
     },
     {
       "source": "module:packages/landing/next.config.ts",
-      "target": "unresolved:typescript:NextConfig",
+      "target": "external:typescript:next.NextConfig",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48336,9 +48457,9 @@
     },
     {
       "source": "module:packages/landing/src/app/editor/page.tsx",
-      "target": "unresolved:tsx:Metadata",
+      "target": "external:tsx:next.Metadata",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48357,9 +48478,9 @@
     },
     {
       "source": "module:packages/landing/src/app/editor/page.tsx",
-      "target": "unresolved:tsx:NextPage",
+      "target": "external:tsx:next.NextPage",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48434,7 +48555,28 @@
     },
     {
       "source": "module:packages/landing/src/app/layout.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:next.Metadata",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 19,
+            "column": 24,
+            "byte": 693
+          },
+          "end": {
+            "line": 19,
+            "column": 32,
+            "byte": 701
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/app/layout.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -48470,27 +48612,6 @@
             "line": 50,
             "column": 37,
             "byte": 1560
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/app/layout.tsx",
-      "target": "unresolved:tsx:Metadata",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 19,
-            "column": 24,
-            "byte": 693
-          },
-          "end": {
-            "line": 19,
-            "column": 32,
-            "byte": 701
           }
         }
       ]
@@ -48560,9 +48681,9 @@
     },
     {
       "source": "module:packages/landing/src/app/page.tsx",
-      "target": "unresolved:tsx:Metadata",
+      "target": "external:tsx:next.Metadata",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48581,9 +48702,9 @@
     },
     {
       "source": "module:packages/landing/src/app/page.tsx",
-      "target": "unresolved:tsx:NextPage",
+      "target": "external:tsx:next.NextPage",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48616,7 +48737,7 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumeEditor.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -48742,7 +48863,28 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 89,
+            "column": 42,
+            "byte": 2300
+          },
+          "end": {
+            "line": 89,
+            "column": 52,
+            "byte": 2310
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -48799,7 +48941,7 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -48838,27 +48980,6 @@
             "line": 78,
             "column": 23,
             "byte": 1943
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 89,
-            "column": 42,
-            "byte": 2300
-          },
-          "end": {
-            "line": 89,
-            "column": 52,
-            "byte": 2310
           }
         }
       ]
@@ -48956,7 +49077,28 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 37,
+            "byte": 210
+          },
+          "end": {
+            "line": 7,
+            "column": 47,
+            "byte": 220
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -48998,27 +49140,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 7,
-            "column": 37,
-            "byte": 210
-          },
-          "end": {
-            "line": 7,
-            "column": 47,
-            "byte": 220
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
       "target": "function:packages/landing/src/components/editor/forms/CoreForm.tsx::CoreForm",
       "kind": "defines",
       "status": "resolved_internal",
@@ -49047,7 +49168,49 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.Education",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 14,
+            "byte": 254
+          },
+          "end": {
+            "line": 15,
+            "column": 23,
+            "byte": 263
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 30,
+            "column": 11,
+            "byte": 484
+          },
+          "end": {
+            "line": 30,
+            "column": 21,
+            "byte": 494
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49089,48 +49252,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
-      "target": "unresolved:tsx:Education",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 14,
-            "byte": 254
-          },
-          "end": {
-            "line": 15,
-            "column": 23,
-            "byte": 263
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 30,
-            "column": 11,
-            "byte": 484
-          },
-          "end": {
-            "line": 30,
-            "column": 21,
-            "byte": 494
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
       "target": "constant:packages/landing/src/components/editor/forms/EducationForm.tsx::EMPTY",
       "kind": "defines",
       "status": "resolved_internal",
@@ -49145,7 +49266,49 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.Experience",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 14,
+            "byte": 255
+          },
+          "end": {
+            "line": 15,
+            "column": 24,
+            "byte": 265
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 26,
+            "column": 11,
+            "byte": 421
+          },
+          "end": {
+            "line": 26,
+            "column": 21,
+            "byte": 431
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49187,48 +49350,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
-      "target": "unresolved:tsx:Experience",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 14,
-            "byte": 255
-          },
-          "end": {
-            "line": 15,
-            "column": 24,
-            "byte": 265
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 26,
-            "column": 11,
-            "byte": 421
-          },
-          "end": {
-            "line": 26,
-            "column": 21,
-            "byte": 431
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
       "target": "constant:packages/landing/src/components/editor/forms/ExperienceForm.tsx::EMPTY",
       "kind": "defines",
       "status": "resolved_internal",
@@ -49243,7 +49364,115 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.Certification",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 13,
+            "column": 19,
+            "byte": 274
+          },
+          "end": {
+            "line": 13,
+            "column": 32,
+            "byte": 287
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
+      "target": "external:tsx:@/lib/resume.Language",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 14,
+            "column": 19,
+            "byte": 352
+          },
+          "end": {
+            "line": 14,
+            "column": 27,
+            "byte": 360
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
+      "target": "external:tsx:@/lib/resume.Reference",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 18,
+            "byte": 419
+          },
+          "end": {
+            "line": 15,
+            "column": 27,
+            "byte": 428
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 24,
+            "column": 11,
+            "byte": 552
+          },
+          "end": {
+            "line": 24,
+            "column": 21,
+            "byte": 562
+          }
+        },
+        {
+          "start": {
+            "line": 99,
+            "column": 11,
+            "byte": 2270
+          },
+          "end": {
+            "line": 99,
+            "column": 21,
+            "byte": 2280
+          }
+        },
+        {
+          "start": {
+            "line": 150,
+            "column": 11,
+            "byte": 3508
+          },
+          "end": {
+            "line": 150,
+            "column": 21,
+            "byte": 3518
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49333,114 +49562,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "unresolved:tsx:Certification",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 13,
-            "column": 19,
-            "byte": 274
-          },
-          "end": {
-            "line": 13,
-            "column": 32,
-            "byte": 287
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "unresolved:tsx:Language",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 14,
-            "column": 19,
-            "byte": 352
-          },
-          "end": {
-            "line": 14,
-            "column": 27,
-            "byte": 360
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "unresolved:tsx:Reference",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 18,
-            "byte": 419
-          },
-          "end": {
-            "line": 15,
-            "column": 27,
-            "byte": 428
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 24,
-            "column": 11,
-            "byte": 552
-          },
-          "end": {
-            "line": 24,
-            "column": 21,
-            "byte": 562
-          }
-        },
-        {
-          "start": {
-            "line": 99,
-            "column": 11,
-            "byte": 2270
-          },
-          "end": {
-            "line": 99,
-            "column": 21,
-            "byte": 2280
-          }
-        },
-        {
-          "start": {
-            "line": 150,
-            "column": 11,
-            "byte": 3508
-          },
-          "end": {
-            "line": 150,
-            "column": 21,
-            "byte": 3518
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
       "target": "constant:packages/landing/src/components/editor/forms/ExtrasForm.tsx::EMPTY_CERT",
       "kind": "defines",
       "status": "resolved_internal",
@@ -49483,7 +49604,82 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.Project",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 22,
+            "byte": 272
+          },
+          "end": {
+            "line": 15,
+            "column": 29,
+            "byte": 279
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 25,
+            "column": 41,
+            "byte": 478
+          },
+          "end": {
+            "line": 25,
+            "column": 51,
+            "byte": 488
+          }
+        },
+        {
+          "start": {
+            "line": 101,
+            "column": 39,
+            "byte": 2406
+          },
+          "end": {
+            "line": 101,
+            "column": 49,
+            "byte": 2416
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
+      "target": "external:tsx:@/lib/resume.SkillGroup",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 23,
+            "column": 20,
+            "byte": 387
+          },
+          "end": {
+            "line": 23,
+            "column": 30,
+            "byte": 397
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49549,81 +49745,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
-      "target": "unresolved:tsx:Project",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 22,
-            "byte": 272
-          },
-          "end": {
-            "line": 15,
-            "column": 29,
-            "byte": 279
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 25,
-            "column": 41,
-            "byte": 478
-          },
-          "end": {
-            "line": 25,
-            "column": 51,
-            "byte": 488
-          }
-        },
-        {
-          "start": {
-            "line": 101,
-            "column": 39,
-            "byte": 2406
-          },
-          "end": {
-            "line": 101,
-            "column": 49,
-            "byte": 2416
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
-      "target": "unresolved:tsx:SkillGroup",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 23,
-            "column": 20,
-            "byte": 387
-          },
-          "end": {
-            "line": 23,
-            "column": 30,
-            "byte": 397
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
       "target": "constant:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx::EMPTY_PROJECT",
       "kind": "defines",
       "status": "resolved_internal",
@@ -49652,7 +49773,40 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/inputs.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:@/lib/resume.ResumeData",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 44,
+            "byte": 187
+          },
+          "end": {
+            "line": 7,
+            "column": 54,
+            "byte": 197
+          }
+        },
+        {
+          "start": {
+            "line": 7,
+            "column": 59,
+            "byte": 202
+          },
+          "end": {
+            "line": 7,
+            "column": 69,
+            "byte": 212
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/inputs.tsx",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49709,7 +49863,7 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/inputs.tsx",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49724,39 +49878,6 @@
             "line": 54,
             "column": 22,
             "byte": 1418
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/inputs.tsx",
-      "target": "unresolved:tsx:ResumeData",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 7,
-            "column": 44,
-            "byte": 187
-          },
-          "end": {
-            "line": 7,
-            "column": 54,
-            "byte": 197
-          }
-        },
-        {
-          "start": {
-            "line": 7,
-            "column": 59,
-            "byte": 202
-          },
-          "end": {
-            "line": 7,
-            "column": 69,
-            "byte": 212
           }
         }
       ]
@@ -49840,7 +49961,7 @@
     },
     {
       "source": "module:packages/landing/src/components/molecules/Footer.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49917,7 +50038,7 @@
     },
     {
       "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -49956,6 +50077,27 @@
             "line": 79,
             "column": 17,
             "byte": 1963
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
+      "target": "external:tsx:react.MouseEventHandler",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 32,
+            "column": 13,
+            "byte": 625
+          },
+          "end": {
+            "line": 32,
+            "column": 30,
+            "byte": 642
           }
         }
       ]
@@ -50019,27 +50161,6 @@
             "line": 79,
             "column": 29,
             "byte": 1975
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
-      "target": "unresolved:tsx:MouseEventHandler",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 32,
-            "column": 13,
-            "byte": 625
-          },
-          "end": {
-            "line": 32,
-            "column": 30,
-            "byte": 642
           }
         }
       ]
@@ -50165,7 +50286,7 @@
     },
     {
       "source": "module:packages/landing/src/components/molecules/SectionHead.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -50235,7 +50356,7 @@
     },
     {
       "source": "module:packages/landing/src/components/resume/ResumeView.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -50270,7 +50391,7 @@
     },
     {
       "source": "module:packages/landing/src/components/resume/Sections.tsx",
-      "target": "external:tsx:lib::FC",
+      "target": "external:tsx:react.FC",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -50339,7 +50460,7 @@
     },
     {
       "source": "module:packages/landing/src/components/resume/Sections.tsx",
-      "target": "external:tsx:lib::ReactNode",
+      "target": "external:tsx:react.ReactNode",
       "kind": "uses_type",
       "status": "resolved_external",
       "origin": "syntax",
@@ -52973,196 +53094,6 @@
     {
       "severity": "warning",
       "kind": "unresolved_import",
-      "message": "cannot resolve import `super::format_description`",
-      "file": "crates/resume-core/src/description.rs",
-      "range": {
-        "start": {
-          "line": 65,
-          "column": 5,
-          "byte": 1896
-        },
-        "end": {
-          "line": 65,
-          "column": 35,
-          "byte": 1926
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::DEFAULT_RESUME_YAML`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::ResumeData`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::list_templates`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::parse_resume_json`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::parse_resume_yaml`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::render_html`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::to_json`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::to_markdown`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `crate::to_yaml`",
-      "file": "crates/resume-core/src/wasm.rs",
-      "range": {
-        "start": {
-          "line": 7,
-          "column": 1,
-          "byte": 248
-        },
-        "end": {
-          "line": 10,
-          "column": 3,
-          "byte": 445
-        }
-      },
-      "language": "rust"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
       "message": "cannot resolve import `./globals.css`",
       "file": "packages/landing/src/app/layout.tsx",
       "range": {
@@ -53240,15 +53171,15 @@
   "statistics": {
     "files": 65,
     "packages": 2,
-    "nodes": 1047,
-    "edges": 2619,
+    "nodes": 1045,
+    "edges": 2632,
     "symbols": 581,
-    "unresolvedEdges": 167,
-    "diagnostics": 15,
+    "unresolvedEdges": 123,
+    "diagnostics": 5,
     "byNodeKind": {
       "constant": 68,
       "enum": 2,
-      "external_symbol": 196,
+      "external_symbol": 216,
       "file": 65,
       "framework": 9,
       "function": 160,
@@ -53259,15 +53190,15 @@
       "repository": 1,
       "struct": 21,
       "type": 4,
-      "unknown": 106,
+      "unknown": 84,
       "variable": 123
     },
     "byEdgeKind": {
       "calls": 695,
       "contains": 758,
       "defines": 603,
-      "exports": 253,
-      "imports": 122,
+      "exports": 263,
+      "imports": 125,
       "uses_framework": 9,
       "uses_type": 179
     },
@@ -53276,14 +53207,14 @@
       "javascript": 9,
       "markdown": 32,
       "python": 58,
-      "rust": 550,
+      "rust": 548,
       "tsx": 196,
       "typescript": 182
     },
     "byStatus": {
-      "resolved_external": 514,
-      "resolved_internal": 1938,
-      "unresolved": 167
+      "resolved_external": 548,
+      "resolved_internal": 1961,
+      "unresolved": 123
     },
     "byFramework": {
       "anyhow": 1,
