@@ -133,18 +133,25 @@
   ],
   "frameworks": [
     {
+      "name": "anyhow",
+      "displayName": "anyhow",
+      "family": "rust",
+      "version": null,
+      "confidence": "high"
+    },
+    {
       "name": "axum",
       "displayName": "Axum",
       "family": "rust",
       "version": null,
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "name": "clap.rs",
       "displayName": "clap.rs",
       "family": "rust",
       "version": null,
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "name": "nextjs",
@@ -159,6 +166,34 @@
       "family": "ecmascript",
       "version": "tailwindcss",
       "confidence": "high"
+    },
+    {
+      "name": "serde",
+      "displayName": "Serde",
+      "family": "rust",
+      "version": null,
+      "confidence": "high"
+    },
+    {
+      "name": "tailwindcss",
+      "displayName": "Tailwind CSS",
+      "family": "ecmascript",
+      "version": "tailwindcss",
+      "confidence": "medium"
+    },
+    {
+      "name": "tokio",
+      "displayName": "Tokio",
+      "family": "rust",
+      "version": null,
+      "confidence": "medium"
+    },
+    {
+      "name": "turborepo",
+      "displayName": "Turborepo",
+      "family": "ecmascript",
+      "version": "commitlint",
+      "confidence": "medium"
     }
   ],
   "nodes": [
@@ -2572,11 +2607,21 @@
       "language": "bash"
     },
     {
+      "id": "framework:anyhow",
+      "kind": "framework",
+      "name": "anyhow",
+      "metadata": {
+        "confidence": "high",
+        "family": "rust",
+        "framework": "anyhow"
+      }
+    },
+    {
       "id": "framework:axum",
       "kind": "framework",
       "name": "Axum",
       "metadata": {
-        "confidence": "medium",
+        "confidence": "high",
         "family": "rust",
         "framework": "axum"
       }
@@ -2586,7 +2631,7 @@
       "kind": "framework",
       "name": "clap.rs",
       "metadata": {
-        "confidence": "medium",
+        "confidence": "high",
         "family": "rust",
         "framework": "clap.rs"
       }
@@ -2609,6 +2654,46 @@
         "confidence": "high",
         "family": "ecmascript",
         "framework": "react"
+      }
+    },
+    {
+      "id": "framework:serde",
+      "kind": "framework",
+      "name": "Serde",
+      "metadata": {
+        "confidence": "high",
+        "family": "rust",
+        "framework": "serde"
+      }
+    },
+    {
+      "id": "framework:tailwindcss:tailwindcss",
+      "kind": "framework",
+      "name": "Tailwind CSS",
+      "metadata": {
+        "confidence": "medium",
+        "family": "ecmascript",
+        "framework": "tailwindcss"
+      }
+    },
+    {
+      "id": "framework:tokio",
+      "kind": "framework",
+      "name": "Tokio",
+      "metadata": {
+        "confidence": "medium",
+        "family": "rust",
+        "framework": "tokio"
+      }
+    },
+    {
+      "id": "framework:turborepo:commitlint",
+      "kind": "framework",
+      "name": "Turborepo",
+      "metadata": {
+        "confidence": "medium",
+        "family": "ecmascript",
+        "framework": "turborepo"
       }
     },
     {
@@ -52425,6 +52510,13 @@
     },
     {
       "source": "repository:.",
+      "target": "framework:anyhow",
+      "kind": "uses_framework",
+      "status": "resolved_internal",
+      "origin": "syntax"
+    },
+    {
+      "source": "repository:.",
       "target": "framework:axum",
       "kind": "uses_framework",
       "status": "resolved_internal",
@@ -52447,6 +52539,34 @@
     {
       "source": "repository:.",
       "target": "framework:react:tailwindcss",
+      "kind": "uses_framework",
+      "status": "resolved_internal",
+      "origin": "syntax"
+    },
+    {
+      "source": "repository:.",
+      "target": "framework:serde",
+      "kind": "uses_framework",
+      "status": "resolved_internal",
+      "origin": "syntax"
+    },
+    {
+      "source": "repository:.",
+      "target": "framework:tailwindcss:tailwindcss",
+      "kind": "uses_framework",
+      "status": "resolved_internal",
+      "origin": "syntax"
+    },
+    {
+      "source": "repository:.",
+      "target": "framework:tokio",
+      "kind": "uses_framework",
+      "status": "resolved_internal",
+      "origin": "syntax"
+    },
+    {
+      "source": "repository:.",
+      "target": "framework:turborepo:commitlint",
       "kind": "uses_framework",
       "status": "resolved_internal",
       "origin": "syntax"
@@ -53032,8 +53152,8 @@
   "statistics": {
     "files": 65,
     "packages": 2,
-    "nodes": 1033,
-    "edges": 2606,
+    "nodes": 1038,
+    "edges": 2611,
     "symbols": 581,
     "unresolvedEdges": 530,
     "diagnostics": 17,
@@ -53042,7 +53162,7 @@
       "enum": 2,
       "external_symbol": 69,
       "file": 65,
-      "framework": 4,
+      "framework": 9,
       "function": 160,
       "interface": 23,
       "module": 87,
@@ -53060,7 +53180,7 @@
       "defines": 603,
       "exports": 253,
       "imports": 127,
-      "uses_framework": 4,
+      "uses_framework": 9,
       "uses_type": 175
     },
     "byLanguage": {
@@ -53074,14 +53194,19 @@
     },
     "byStatus": {
       "resolved_external": 145,
-      "resolved_internal": 1931,
+      "resolved_internal": 1936,
       "unresolved": 530
     },
     "byFramework": {
+      "anyhow": 1,
       "axum": 1,
       "clap.rs": 1,
       "nextjs": 1,
-      "react": 1
+      "react": 1,
+      "serde": 1,
+      "tailwindcss": 1,
+      "tokio": 1,
+      "turborepo": 1
     }
   }
 }
