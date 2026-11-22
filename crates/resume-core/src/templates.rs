@@ -1,3 +1,5 @@
+use minijinja::syntax::SyntaxConfig;
+use minijinja::value::Serde;
 use minijinja::{Environment, Error, Value};
 use std::sync::OnceLock;
 
@@ -15,7 +17,11 @@ fn env() -> Result<&'static Environment<'static>, Error> {
     ENV.get_or_init(|| {
         let mut env = Environment::new();
         // Go's text/template preserves the file's trailing newline.
-        env.set_keep_trailing_newline(true);
+        env.set_syntax(
+            SyntaxConfig::builder()
+                .keep_trailing_newline(true)
+                .build()?,
+        );
         env.add_function("description", |value: Value| -> Result<String, Error> {
             Ok(format_description(value.as_str().unwrap_or_default()))
         });
@@ -56,7 +62,7 @@ pub fn render_html(data: &ResumeData, template_name: &str) -> Result<String, Err
 
 fn render(env: &Environment<'_>, name: &str, data: &ResumeData) -> Result<String, Error> {
     let template = env.get_template(name)?;
-    let ctx = minijinja::context! { resume => Value::from_serialize(data) };
+    let ctx = minijinja::context! { resume => Value::from(Serde(data)) };
     template.render(ctx)
 }
 
