@@ -1756,12 +1756,6 @@
       "language": "python"
     },
     {
-      "id": "external:python:builtins::compile",
-      "kind": "external_symbol",
-      "name": "compile",
-      "language": "python"
-    },
-    {
       "id": "external:python:builtins::get",
       "kind": "external_symbol",
       "name": "get",
@@ -1777,6 +1771,12 @@
       "id": "external:python:builtins::len",
       "kind": "external_symbol",
       "name": "len",
+      "language": "python"
+    },
+    {
+      "id": "external:python:builtins::list",
+      "kind": "external_symbol",
+      "name": "list",
       "language": "python"
     },
     {
@@ -1843,6 +1843,12 @@
       "id": "external:python:builtins::strip",
       "kind": "external_symbol",
       "name": "strip",
+      "language": "python"
+    },
+    {
+      "id": "external:python:re.compile",
+      "kind": "external_symbol",
+      "name": "compile",
       "language": "python"
     },
     {
@@ -1996,6 +2002,54 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:axum.serve",
+      "kind": "external_symbol",
+      "name": "serve",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json.from_slice",
+      "kind": "external_symbol",
+      "name": "from_slice",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json.from_str",
+      "kind": "external_symbol",
+      "name": "from_str",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json.to_string",
+      "kind": "external_symbol",
+      "name": "to_string",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json.to_string_pretty",
+      "kind": "external_symbol",
+      "name": "to_string_pretty",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_json::to_string.unwrap_or_else",
+      "kind": "external_symbol",
+      "name": "unwrap_or_else",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_yml.from_str",
+      "kind": "external_symbol",
+      "name": "from_str",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:serde_yml.to_string",
+      "kind": "external_symbol",
+      "name": "to_string",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:std::Err",
       "kind": "external_symbol",
       "name": "Err",
@@ -2008,9 +2062,33 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:std::OnceLock",
+      "kind": "external_symbol",
+      "name": "OnceLock",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::Path",
+      "kind": "external_symbol",
+      "name": "Path",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::SocketAddr",
+      "kind": "external_symbol",
+      "name": "SocketAddr",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:std::Some",
       "kind": "external_symbol",
       "name": "Some",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::Write",
+      "kind": "external_symbol",
+      "name": "Write",
       "language": "rust"
     },
     {
@@ -2080,6 +2158,30 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:std::env.args",
+      "kind": "external_symbol",
+      "name": "args",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::env.var",
+      "kind": "external_symbol",
+      "name": "var",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::env::args.collect",
+      "kind": "external_symbol",
+      "name": "collect",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::env::var.unwrap_or_else",
+      "kind": "external_symbol",
+      "name": "unwrap_or_else",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:std::eprintln",
       "kind": "external_symbol",
       "name": "eprintln",
@@ -2110,9 +2212,69 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:std::fs.create_dir_all",
+      "kind": "external_symbol",
+      "name": "create_dir_all",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs.read_to_string",
+      "kind": "external_symbol",
+      "name": "read_to_string",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs.write",
+      "kind": "external_symbol",
+      "name": "write",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:std::fs::File.open",
       "kind": "external_symbol",
       "name": "open",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::File::open.context",
+      "kind": "external_symbol",
+      "name": "context",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::File::open.read_to_end",
+      "kind": "external_symbol",
+      "name": "read_to_end",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::create_dir_all.context",
+      "kind": "external_symbol",
+      "name": "context",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::read_to_string.unwrap",
+      "kind": "external_symbol",
+      "name": "unwrap",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::read_to_string.with_context",
+      "kind": "external_symbol",
+      "name": "with_context",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::write.context",
+      "kind": "external_symbol",
+      "name": "context",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::fs::write.with_context",
+      "kind": "external_symbol",
+      "name": "with_context",
       "language": "rust"
     },
     {
@@ -2131,6 +2293,24 @@
       "id": "external:rust:std::into",
       "kind": "external_symbol",
       "name": "into",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::io.stdin",
+      "kind": "external_symbol",
+      "name": "stdin",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::io.stdout",
+      "kind": "external_symbol",
+      "name": "stdout",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::io::stdout.lock",
+      "kind": "external_symbol",
+      "name": "lock",
       "language": "rust"
     },
     {
@@ -2200,9 +2380,21 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:std::net::TcpListener::bind.with_context",
+      "kind": "external_symbol",
+      "name": "with_context",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:std::net::UdpSocket.bind",
       "kind": "external_symbol",
       "name": "bind",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::net::UdpSocket::bind.ok",
+      "kind": "external_symbol",
+      "name": "ok",
       "language": "rust"
     },
     {
@@ -2245,6 +2437,12 @@
       "id": "external:rust:std::println",
       "kind": "external_symbol",
       "name": "println",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:std::process.exit",
+      "kind": "external_symbol",
+      "name": "exit",
       "language": "rust"
     },
     {
@@ -2338,6 +2536,18 @@
       "language": "rust"
     },
     {
+      "id": "external:rust:tempfile.tempdir",
+      "kind": "external_symbol",
+      "name": "tempdir",
+      "language": "rust"
+    },
+    {
+      "id": "external:rust:tempfile::tempdir.context",
+      "kind": "external_symbol",
+      "name": "context",
+      "language": "rust"
+    },
+    {
       "id": "external:rust:tokio::net::TcpListener.from_std",
       "kind": "external_symbol",
       "name": "from_std",
@@ -2362,9 +2572,33 @@
       "language": "tsx"
     },
     {
+      "id": "external:tsx:URL.createObjectURL",
+      "kind": "external_symbol",
+      "name": "createObjectURL",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:URL.revokeObjectURL",
+      "kind": "external_symbol",
+      "name": "revokeObjectURL",
+      "language": "tsx"
+    },
+    {
       "id": "external:tsx:lib::Date",
       "kind": "external_symbol",
       "name": "Date",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:lib::FC",
+      "kind": "external_symbol",
+      "name": "FC",
+      "language": "tsx"
+    },
+    {
+      "id": "external:tsx:lib::ReactNode",
+      "kind": "external_symbol",
+      "name": "ReactNode",
       "language": "tsx"
     },
     {
@@ -2428,6 +2662,36 @@
       "language": "tsx"
     },
     {
+      "id": "external:typescript:JSON.parse",
+      "kind": "external_symbol",
+      "name": "parse",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:JSON.stringify",
+      "kind": "external_symbol",
+      "name": "stringify",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:Math.random",
+      "kind": "external_symbol",
+      "name": "random",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:String.padStart",
+      "kind": "external_symbol",
+      "name": "padStart",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:crypto.randomUUID",
+      "kind": "external_symbol",
+      "name": "randomUUID",
+      "language": "typescript"
+    },
+    {
       "id": "external:typescript:lib::Date",
       "kind": "external_symbol",
       "name": "Date",
@@ -2437,6 +2701,18 @@
       "id": "external:typescript:lib::Error",
       "kind": "external_symbol",
       "name": "Error",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:lib::Promise",
+      "kind": "external_symbol",
+      "name": "Promise",
+      "language": "typescript"
+    },
+    {
+      "id": "external:typescript:lib::Record",
+      "kind": "external_symbol",
+      "name": "Record",
       "language": "typescript"
     },
     {
@@ -2464,24 +2740,6 @@
       "language": "typescript"
     },
     {
-      "id": "external:typescript:lib::padStart",
-      "kind": "external_symbol",
-      "name": "padStart",
-      "language": "typescript"
-    },
-    {
-      "id": "external:typescript:lib::parse",
-      "kind": "external_symbol",
-      "name": "parse",
-      "language": "typescript"
-    },
-    {
-      "id": "external:typescript:lib::random",
-      "kind": "external_symbol",
-      "name": "random",
-      "language": "typescript"
-    },
-    {
       "id": "external:typescript:lib::slice",
       "kind": "external_symbol",
       "name": "slice",
@@ -2491,12 +2749,6 @@
       "id": "external:typescript:lib::split",
       "kind": "external_symbol",
       "name": "split",
-      "language": "typescript"
-    },
-    {
-      "id": "external:typescript:lib::stringify",
-      "kind": "external_symbol",
-      "name": "stringify",
       "language": "typescript"
     },
     {
@@ -2560,12 +2812,6 @@
       "language": "rust"
     },
     {
-      "id": "external:unknown:assets/branding/png/og.png",
-      "kind": "external_symbol",
-      "name": "assets/branding/png/og.png",
-      "language": "markdown"
-    },
-    {
       "id": "external:unknown:axum",
       "kind": "external_symbol",
       "name": "axum",
@@ -2600,42 +2846,6 @@
       "kind": "external_symbol",
       "name": "generated",
       "language": "rust"
-    },
-    {
-      "id": "external:unknown:https://github.com/hieudoanm",
-      "kind": "external_symbol",
-      "name": "https://github.com/hieudoanm",
-      "language": "markdown"
-    },
-    {
-      "id": "external:unknown:https://github.com/hieudoanm/resume",
-      "kind": "external_symbol",
-      "name": "https://github.com/hieudoanm/resume",
-      "language": "markdown"
-    },
-    {
-      "id": "external:unknown:https://github.com/hieudoanm/resume#readme",
-      "kind": "external_symbol",
-      "name": "https://github.com/hieudoanm/resume#readme",
-      "language": "markdown"
-    },
-    {
-      "id": "external:unknown:https://hieudoanm.github.io",
-      "kind": "external_symbol",
-      "name": "https://hieudoanm.github.io",
-      "language": "markdown"
-    },
-    {
-      "id": "external:unknown:https://hieudoanm.github.io/resume/",
-      "kind": "external_symbol",
-      "name": "https://hieudoanm.github.io/resume/",
-      "language": "markdown"
-    },
-    {
-      "id": "external:unknown:https://linkedin.com/in/hieudoanm",
-      "kind": "external_symbol",
-      "name": "https://linkedin.com/in/hieudoanm",
-      "language": "markdown"
     },
     {
       "id": "external:unknown:minijinja",
@@ -12763,12 +12973,6 @@
       "language": "python"
     },
     {
-      "id": "unresolved:python:list",
-      "kind": "unknown",
-      "name": "list",
-      "language": "python"
-    },
-    {
       "id": "unresolved:python:mkdir",
       "kind": "unknown",
       "name": "mkdir",
@@ -12835,18 +13039,6 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:OnceLock",
-      "kind": "unknown",
-      "name": "OnceLock",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Path",
-      "kind": "unknown",
-      "name": "Path",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:Query",
       "kind": "unknown",
       "name": "Query",
@@ -12865,12 +13057,6 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:SocketAddr",
-      "kind": "unknown",
-      "name": "SocketAddr",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:State",
       "kind": "unknown",
       "name": "State",
@@ -12886,12 +13072,6 @@
       "id": "unresolved:rust:Value",
       "kind": "unknown",
       "name": "Value",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:Write",
-      "kind": "unknown",
-      "name": "Write",
       "language": "rust"
     },
     {
@@ -12961,21 +13141,9 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:create_dir_all",
-      "kind": "unknown",
-      "name": "create_dir_all",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:exists",
       "kind": "unknown",
       "name": "exists",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:exit",
-      "kind": "unknown",
-      "name": "exit",
       "language": "rust"
     },
     {
@@ -12988,18 +13156,6 @@
       "id": "unresolved:rust:flush",
       "kind": "unknown",
       "name": "flush",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:from_slice",
-      "kind": "unknown",
-      "name": "from_slice",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:from_str",
-      "kind": "unknown",
-      "name": "from_str",
       "language": "rust"
     },
     {
@@ -13069,12 +13225,6 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:minijinja::context",
-      "kind": "unknown",
-      "name": "minijinja::context",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:parent",
       "kind": "unknown",
       "name": "parent",
@@ -13096,18 +13246,6 @@
       "id": "unresolved:rust:read_dir",
       "kind": "unknown",
       "name": "read_dir",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:read_to_end",
-      "kind": "unknown",
-      "name": "read_to_end",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:read_to_string",
-      "kind": "unknown",
-      "name": "read_to_string",
       "language": "rust"
     },
     {
@@ -13141,12 +13279,6 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:serve",
-      "kind": "unknown",
-      "name": "serve",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:set_nonblocking",
       "kind": "unknown",
       "name": "set_nonblocking",
@@ -13165,39 +13297,15 @@
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:stdin",
-      "kind": "unknown",
-      "name": "stdin",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:stdout",
-      "kind": "unknown",
-      "name": "stdout",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:success",
       "kind": "unknown",
       "name": "success",
       "language": "rust"
     },
     {
-      "id": "unresolved:rust:tempdir",
-      "kind": "unknown",
-      "name": "tempdir",
-      "language": "rust"
-    },
-    {
       "id": "unresolved:rust:to_string_lossy",
       "kind": "unknown",
       "name": "to_string_lossy",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:to_string_pretty",
-      "kind": "unknown",
-      "name": "to_string_pretty",
       "language": "rust"
     },
     {
@@ -13210,12 +13318,6 @@
       "id": "unresolved:rust:var",
       "kind": "unknown",
       "name": "var",
-      "language": "rust"
-    },
-    {
-      "id": "unresolved:rust:with_context",
-      "kind": "unknown",
-      "name": "with_context",
       "language": "rust"
     },
     {
@@ -13249,12 +13351,6 @@
       "language": "tsx"
     },
     {
-      "id": "unresolved:tsx:FC",
-      "kind": "unknown",
-      "name": "FC",
-      "language": "tsx"
-    },
-    {
       "id": "unresolved:tsx:Language",
       "kind": "unknown",
       "name": "Language",
@@ -13285,12 +13381,6 @@
       "language": "tsx"
     },
     {
-      "id": "unresolved:tsx:ReactNode",
-      "kind": "unknown",
-      "name": "ReactNode",
-      "language": "tsx"
-    },
-    {
       "id": "unresolved:tsx:Reference",
       "kind": "unknown",
       "name": "Reference",
@@ -13318,12 +13408,6 @@
       "id": "unresolved:tsx:createElement",
       "kind": "unknown",
       "name": "createElement",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:createObjectURL",
-      "kind": "unknown",
-      "name": "createObjectURL",
       "language": "tsx"
     },
     {
@@ -13360,12 +13444,6 @@
       "id": "unresolved:tsx:renderTab",
       "kind": "unknown",
       "name": "renderTab",
-      "language": "tsx"
-    },
-    {
-      "id": "unresolved:tsx:revokeObjectURL",
-      "kind": "unknown",
-      "name": "revokeObjectURL",
       "language": "tsx"
     },
     {
@@ -13471,24 +13549,6 @@
       "language": "typescript"
     },
     {
-      "id": "unresolved:typescript:Promise",
-      "kind": "unknown",
-      "name": "Promise",
-      "language": "typescript"
-    },
-    {
-      "id": "unresolved:typescript:Record",
-      "kind": "unknown",
-      "name": "Record",
-      "language": "typescript"
-    },
-    {
-      "id": "unresolved:typescript:console[level]",
-      "kind": "unknown",
-      "name": "console[level]",
-      "language": "typescript"
-    },
-    {
       "id": "unresolved:typescript:getHours",
       "kind": "unknown",
       "name": "getHours",
@@ -13516,12 +13576,6 @@
       "id": "unresolved:typescript:getSeconds",
       "kind": "unknown",
       "name": "getSeconds",
-      "language": "typescript"
-    },
-    {
-      "id": "unresolved:typescript:randomUUID",
-      "kind": "unknown",
-      "name": "randomUUID",
       "language": "typescript"
     },
     {
@@ -16288,137 +16342,11 @@
       "origin": "syntax"
     },
     {
-      "source": "file:RELEASE.md",
-      "target": "external:unknown:assets/branding/png/og.png",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 28
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 29
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:RELEASE.md",
-      "target": "external:unknown:https://github.com/hieudoanm/resume#readme",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 1336
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 1337
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:RELEASE.md",
-      "target": "external:unknown:https://hieudoanm.github.io/resume/",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 1391
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 1392
-          }
-        }
-      ]
-    },
-    {
       "source": "file:RESUME.md",
       "target": "module:RESUME.md",
       "kind": "contains",
       "status": "resolved_internal",
       "origin": "syntax"
-    },
-    {
-      "source": "file:RESUME.md",
-      "target": "external:unknown:https://github.com/hieudoanm",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 378
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 379
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:RESUME.md",
-      "target": "external:unknown:https://hieudoanm.github.io",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 218
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 219
-          }
-        }
-      ]
-    },
-    {
-      "source": "file:RESUME.md",
-      "target": "external:unknown:https://linkedin.com/in/hieudoanm",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 293
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 294
-          }
-        }
-      ]
     },
     {
       "source": "file:assets/AGENTS.md",
@@ -16461,6 +16389,27 @@
       "kind": "contains",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "file:crates/resume-cli/AGENTS.md",
+      "target": "file:AGENTS.md",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "byte": 82
+          },
+          "end": {
+            "line": 1,
+            "column": 2,
+            "byte": 83
+          }
+        }
+      ]
     },
     {
       "source": "file:crates/resume-cli/README.md",
@@ -18720,6 +18669,27 @@
       "kind": "contains",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "file:crates/resume-core/AGENTS.md",
+      "target": "file:AGENTS.md",
+      "kind": "imports",
+      "status": "resolved_internal",
+      "origin": "import",
+      "sites": [
+        {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "byte": 125
+          },
+          "end": {
+            "line": 1,
+            "column": 2,
+            "byte": 126
+          }
+        }
+      ]
     },
     {
       "source": "file:crates/resume-core/README.md",
@@ -21146,27 +21116,6 @@
       "kind": "contains",
       "status": "resolved_internal",
       "origin": "syntax"
-    },
-    {
-      "source": "file:packages/landing/README.md",
-      "target": "external:unknown:https://github.com/hieudoanm/resume",
-      "kind": "imports",
-      "status": "resolved_external",
-      "origin": "import",
-      "sites": [
-        {
-          "start": {
-            "line": 1,
-            "column": 1,
-            "byte": 49
-          },
-          "end": {
-            "line": 1,
-            "column": 2,
-            "byte": 50
-          }
-        }
-      ]
     },
     {
       "source": "file:packages/landing/eslint.config.mjs",
@@ -25546,7 +25495,28 @@
     },
     {
       "source": "function:crates/resume-cli/examples/render.rs::main",
-      "target": "external:rust:std::collect",
+      "target": "external:rust:std::env.args",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 4,
+            "column": 29,
+            "byte": 92
+          },
+          "end": {
+            "line": 4,
+            "column": 45,
+            "byte": 108
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/examples/render.rs::main",
+      "target": "external:rust:std::env::args.collect",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -25561,6 +25531,48 @@
             "line": 4,
             "column": 55,
             "byte": 118
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/examples/render.rs::main",
+      "target": "external:rust:std::fs.read_to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 18,
+            "byte": 296
+          },
+          "end": {
+            "line": 7,
+            "column": 52,
+            "byte": 330
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/examples/render.rs::main",
+      "target": "external:rust:std::fs::read_to_string.unwrap",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 18,
+            "byte": 296
+          },
+          "end": {
+            "line": 7,
+            "column": 61,
+            "byte": 339
           }
         }
       ]
@@ -25661,18 +25673,6 @@
       "sites": [
         {
           "start": {
-            "line": 7,
-            "column": 18,
-            "byte": 296
-          },
-          "end": {
-            "line": 7,
-            "column": 61,
-            "byte": 339
-          }
-        },
-        {
-          "start": {
             "line": 8,
             "column": 16,
             "byte": 356
@@ -25740,48 +25740,6 @@
       ]
     },
     {
-      "source": "function:crates/resume-cli/examples/render.rs::main",
-      "target": "unresolved:rust:args",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 4,
-            "column": 29,
-            "byte": 92
-          },
-          "end": {
-            "line": 4,
-            "column": 45,
-            "byte": 108
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/examples/render.rs::main",
-      "target": "unresolved:rust:read_to_string",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 7,
-            "column": 18,
-            "byte": 296
-          },
-          "end": {
-            "line": 7,
-            "column": 52,
-            "byte": 330
-          }
-        }
-      ]
-    },
-    {
       "source": "function:crates/resume-cli/src/cmd_init.rs::run",
       "target": "external:rust:Path.new",
       "kind": "calls",
@@ -25825,6 +25783,48 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_init.rs::run",
+      "target": "external:rust:std::fs.write",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 5,
+            "byte": 312
+          },
+          "end": {
+            "line": 15,
+            "column": 46,
+            "byte": 353
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_init.rs::run",
+      "target": "external:rust:std::fs::write.context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 15,
+            "column": 5,
+            "byte": 312
+          },
+          "end": {
+            "line": 15,
+            "column": 85,
+            "byte": 392
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_init.rs::run",
       "target": "external:rust:std::println",
       "kind": "calls",
       "status": "resolved_external",
@@ -25846,27 +25846,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_init.rs::run",
-      "target": "external:rust:std::write",
-      "kind": "calls",
-      "status": "resolved_external",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 5,
-            "byte": 312
-          },
-          "end": {
-            "line": 15,
-            "column": 46,
-            "byte": 353
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_init.rs::run",
       "target": "external:unresolved:anyhow::bail",
       "kind": "calls",
       "status": "resolved_internal",
@@ -25882,27 +25861,6 @@
             "line": 13,
             "column": 39,
             "byte": 300
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_init.rs::run",
-      "target": "unresolved:rust:context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 15,
-            "column": 5,
-            "byte": 312
-          },
-          "end": {
-            "line": 15,
-            "column": 85,
-            "byte": 392
           }
         }
       ]
@@ -26092,6 +26050,132 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs.create_dir_all",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 29,
+            "column": 13,
+            "byte": 881
+          },
+          "end": {
+            "line": 29,
+            "column": 41,
+            "byte": 909
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs.read_to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 22,
+            "column": 18,
+            "byte": 516
+          },
+          "end": {
+            "line": 22,
+            "column": 54,
+            "byte": 552
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs.write",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 32,
+            "column": 5,
+            "byte": 977
+          },
+          "end": {
+            "line": 32,
+            "column": 43,
+            "byte": 1015
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs::create_dir_all.context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 29,
+            "column": 13,
+            "byte": 881
+          },
+          "end": {
+            "line": 29,
+            "column": 86,
+            "byte": 954
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs::read_to_string.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 22,
+            "column": 18,
+            "byte": 516
+          },
+          "end": {
+            "line": 23,
+            "column": 67,
+            "byte": 619
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
+      "target": "external:rust:std::fs::write.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 32,
+            "column": 5,
+            "byte": 977
+          },
+          "end": {
+            "line": 33,
+            "column": 69,
+            "byte": 1084
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
       "target": "external:rust:std::is_empty",
       "kind": "calls",
       "status": "resolved_external",
@@ -26128,27 +26212,6 @@
             "line": 35,
             "column": 42,
             "byte": 1129
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "external:rust:std::write",
-      "kind": "calls",
-      "status": "resolved_external",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 32,
-            "column": 5,
-            "byte": 977
-          },
-          "end": {
-            "line": 32,
-            "column": 43,
-            "byte": 1015
           }
         }
       ]
@@ -26255,39 +26318,6 @@
             "column": 81,
             "byte": 702
           }
-        },
-        {
-          "start": {
-            "line": 29,
-            "column": 13,
-            "byte": 881
-          },
-          "end": {
-            "line": 29,
-            "column": 86,
-            "byte": 954
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "unresolved:rust:create_dir_all",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 29,
-            "column": 13,
-            "byte": 881
-          },
-          "end": {
-            "line": 29,
-            "column": 41,
-            "byte": 909
-          }
         }
       ]
     },
@@ -26329,60 +26359,6 @@
             "line": 27,
             "column": 56,
             "byte": 800
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "unresolved:rust:read_to_string",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 22,
-            "column": 18,
-            "byte": 516
-          },
-          "end": {
-            "line": 22,
-            "column": 54,
-            "byte": 552
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_md.rs::run",
-      "target": "unresolved:rust:with_context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 22,
-            "column": 18,
-            "byte": 516
-          },
-          "end": {
-            "line": 23,
-            "column": 67,
-            "byte": 619
-          }
-        },
-        {
-          "start": {
-            "line": 32,
-            "column": 5,
-            "byte": 977
-          },
-          "end": {
-            "line": 33,
-            "column": 69,
-            "byte": 1084
           }
         }
       ]
@@ -26506,6 +26482,90 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
+      "target": "external:rust:std::fs.read_to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 39,
+            "column": 9,
+            "byte": 882
+          },
+          "end": {
+            "line": 39,
+            "column": 40,
+            "byte": 913
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
+      "target": "external:rust:std::fs.write",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 54,
+            "column": 5,
+            "byte": 1417
+          },
+          "end": {
+            "line": 54,
+            "column": 33,
+            "byte": 1445
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
+      "target": "external:rust:std::fs::read_to_string.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 39,
+            "column": 9,
+            "byte": 882
+          },
+          "end": {
+            "line": 39,
+            "column": 91,
+            "byte": 964
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
+      "target": "external:rust:std::fs::write.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 54,
+            "column": 5,
+            "byte": 1417
+          },
+          "end": {
+            "line": 54,
+            "column": 86,
+            "byte": 1498
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
       "target": "external:rust:std::is_empty",
       "kind": "calls",
       "status": "resolved_external",
@@ -26611,27 +26671,6 @@
             "line": 29,
             "column": 33,
             "byte": 706
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "external:rust:std::write",
-      "kind": "calls",
-      "status": "resolved_external",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 54,
-            "column": 5,
-            "byte": 1417
-          },
-          "end": {
-            "line": 54,
-            "column": 33,
-            "byte": 1445
           }
         }
       ]
@@ -26788,60 +26827,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "unresolved:rust:read_to_string",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 39,
-            "column": 9,
-            "byte": 882
-          },
-          "end": {
-            "line": 39,
-            "column": 40,
-            "byte": 913
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
-      "target": "unresolved:rust:with_context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 39,
-            "column": 9,
-            "byte": 882
-          },
-          "end": {
-            "line": 39,
-            "column": 91,
-            "byte": 964
-          }
-        },
-        {
-          "start": {
-            "line": 54,
-            "column": 5,
-            "byte": 1417
-          },
-          "end": {
-            "line": 54,
-            "column": 86,
-            "byte": 1498
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_pdf.rs::run",
       "target": "struct:crates/resume-cli/src/cmd_pdf.rs::PdfArgs",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -26857,6 +26842,48 @@
             "line": 22,
             "column": 25,
             "byte": 495
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_serve.rs::run",
+      "target": "external:rust:std::env.var",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 10,
+            "column": 16,
+            "byte": 157
+          },
+          "end": {
+            "line": 10,
+            "column": 37,
+            "byte": 178
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_serve.rs::run",
+      "target": "external:rust:std::env::var.unwrap_or_else",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 10,
+            "column": 16,
+            "byte": 157
+          },
+          "end": {
+            "line": 10,
+            "column": 76,
+            "byte": 217
           }
         }
       ]
@@ -26884,27 +26911,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_serve.rs::run",
-      "target": "external:rust:std::unwrap_or_else",
-      "kind": "calls",
-      "status": "resolved_external",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 10,
-            "column": 16,
-            "byte": 157
-          },
-          "end": {
-            "line": 10,
-            "column": 76,
-            "byte": 217
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_serve.rs::run",
       "target": "function:crates/resume-cli/src/serve.rs::run",
       "kind": "calls",
       "status": "resolved_internal",
@@ -26920,27 +26926,6 @@
             "line": 11,
             "column": 22,
             "byte": 240
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_serve.rs::run",
-      "target": "unresolved:rust:var",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 10,
-            "column": 16,
-            "byte": 157
-          },
-          "end": {
-            "line": 10,
-            "column": 37,
-            "byte": 178
           }
         }
       ]
@@ -27025,6 +27010,48 @@
             "line": 21,
             "column": 90,
             "byte": 566
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
+      "target": "external:rust:std::fs.read_to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 21,
+            "column": 9,
+            "byte": 485
+          },
+          "end": {
+            "line": 21,
+            "column": 40,
+            "byte": 516
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
+      "target": "external:rust:std::fs::read_to_string.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 21,
+            "column": 9,
+            "byte": 485
+          },
+          "end": {
+            "line": 21,
+            "column": 91,
+            "byte": 567
           }
         }
       ]
@@ -27232,48 +27259,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
-      "target": "unresolved:rust:read_to_string",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 21,
-            "column": 9,
-            "byte": 485
-          },
-          "end": {
-            "line": 21,
-            "column": 40,
-            "byte": 516
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
-      "target": "unresolved:rust:with_context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 21,
-            "column": 9,
-            "byte": 485
-          },
-          "end": {
-            "line": 21,
-            "column": 91,
-            "byte": 567
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/cmd_validate.rs::run",
       "target": "struct:crates/resume-cli/src/cmd_validate.rs::ValidateArgs",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -27337,6 +27322,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/main.rs::main",
+      "target": "external:rust:std::process.exit",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 46,
+            "column": 9,
+            "byte": 1429
+          },
+          "end": {
+            "line": 46,
+            "column": 30,
+            "byte": 1450
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/main.rs::main",
       "target": "function:crates/resume-cli/src/main.rs::run",
       "kind": "calls",
       "status": "resolved_internal",
@@ -27352,27 +27358,6 @@
             "line": 44,
             "column": 31,
             "byte": 1380
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/main.rs::main",
-      "target": "unresolved:rust:exit",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 46,
-            "column": 9,
-            "byte": 1429
-          },
-          "end": {
-            "line": 46,
-            "column": 30,
-            "byte": 1450
           }
         }
       ]
@@ -27592,6 +27577,27 @@
             "line": 121,
             "column": 72,
             "byte": 4005
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
+      "target": "external:rust:serde_json.from_slice",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 31,
+            "column": 28,
+            "byte": 817
+          },
+          "end": {
+            "line": 31,
+            "column": 55,
+            "byte": 844
           }
         }
       ]
@@ -27964,21 +27970,21 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
-      "target": "unresolved:rust:from_slice",
-      "kind": "calls",
-      "status": "unresolved",
+      "target": "external:rust:std::Write",
+      "kind": "uses_type",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
           "start": {
-            "line": 31,
-            "column": 28,
-            "byte": 817
+            "line": 30,
+            "column": 46,
+            "byte": 767
           },
           "end": {
-            "line": 31,
-            "column": 55,
-            "byte": 844
+            "line": 30,
+            "column": 51,
+            "byte": 772
           }
         }
       ]
@@ -28000,27 +28006,6 @@
             "line": 31,
             "column": 19,
             "byte": 808
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::handle_message",
-      "target": "unresolved:rust:Write",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 30,
-            "column": 46,
-            "byte": 767
-          },
-          "end": {
-            "line": 30,
-            "column": 51,
-            "byte": 772
           }
         }
       ]
@@ -28111,6 +28096,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
+      "target": "external:rust:std::Write",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 98,
+            "column": 62,
+            "byte": 3339
+          },
+          "end": {
+            "line": 98,
+            "column": 67,
+            "byte": 3344
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
       "target": "unresolved:rust:Value",
       "kind": "uses_type",
       "status": "unresolved",
@@ -28126,27 +28132,6 @@
             "line": 98,
             "column": 32,
             "byte": 3309
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::handle_tool",
-      "target": "unresolved:rust:Write",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 98,
-            "column": 62,
-            "byte": 3339
-          },
-          "end": {
-            "line": 98,
-            "column": 67,
-            "byte": 3344
           }
         }
       ]
@@ -28369,6 +28354,69 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::run",
+      "target": "external:rust:std::io.stdin",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 16,
+            "column": 17,
+            "byte": 423
+          },
+          "end": {
+            "line": 16,
+            "column": 33,
+            "byte": 439
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::run",
+      "target": "external:rust:std::io.stdout",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 17,
+            "column": 22,
+            "byte": 462
+          },
+          "end": {
+            "line": 17,
+            "column": 39,
+            "byte": 479
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::run",
+      "target": "external:rust:std::io::stdout.lock",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 17,
+            "column": 22,
+            "byte": 462
+          },
+          "end": {
+            "line": 17,
+            "column": 46,
+            "byte": 486
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::run",
       "target": "external:rust:std::is_empty",
       "kind": "calls",
       "status": "resolved_external",
@@ -28481,18 +28529,6 @@
       "sites": [
         {
           "start": {
-            "line": 17,
-            "column": 22,
-            "byte": 462
-          },
-          "end": {
-            "line": 17,
-            "column": 46,
-            "byte": 486
-          }
-        },
-        {
-          "start": {
             "line": 19,
             "column": 17,
             "byte": 505
@@ -28501,48 +28537,6 @@
             "line": 19,
             "column": 29,
             "byte": 517
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::run",
-      "target": "unresolved:rust:stdin",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 16,
-            "column": 17,
-            "byte": 423
-          },
-          "end": {
-            "line": 16,
-            "column": 33,
-            "byte": 439
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::run",
-      "target": "unresolved:rust:stdout",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 17,
-            "column": 22,
-            "byte": 462
-          },
-          "end": {
-            "line": 17,
-            "column": 39,
-            "byte": 479
           }
         }
       ]
@@ -28720,6 +28714,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/mcp.rs::write_response",
+      "target": "external:rust:std::Write",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 128,
+            "column": 34,
+            "byte": 4165
+          },
+          "end": {
+            "line": 128,
+            "column": 39,
+            "byte": 4170
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/mcp.rs::write_response",
       "target": "unresolved:rust:Value",
       "kind": "uses_type",
       "status": "unresolved",
@@ -28735,27 +28750,6 @@
             "line": 128,
             "column": 52,
             "byte": 4183
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/mcp.rs::write_response",
-      "target": "unresolved:rust:Write",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 128,
-            "column": 34,
-            "byte": 4165
-          },
-          "end": {
-            "line": 128,
-            "column": 39,
-            "byte": 4170
           }
         }
       ]
@@ -28825,6 +28819,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "external:rust:std::fs.write",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 14,
+            "column": 5,
+            "byte": 609
+          },
+          "end": {
+            "line": 14,
+            "column": 37,
+            "byte": 641
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
       "target": "external:rust:std::fs::File.open",
       "kind": "calls",
       "status": "resolved_external",
@@ -28840,6 +28855,81 @@
             "line": 40,
             "column": 35,
             "byte": 1300
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "external:rust:std::fs::File::open.context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 40,
+            "column": 5,
+            "byte": 1270
+          },
+          "end": {
+            "line": 41,
+            "column": 49,
+            "byte": 1349
+          }
+        },
+        {
+          "start": {
+            "line": 40,
+            "column": 5,
+            "byte": 1270
+          },
+          "end": {
+            "line": 43,
+            "column": 49,
+            "byte": 1430
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "external:rust:std::fs::File::open.read_to_end",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 40,
+            "column": 5,
+            "byte": 1270
+          },
+          "end": {
+            "line": 42,
+            "column": 31,
+            "byte": 1381
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "external:rust:std::fs::write.context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 14,
+            "column": 5,
+            "byte": 609
+          },
+          "end": {
+            "line": 14,
+            "column": 74,
+            "byte": 678
           }
         }
       ]
@@ -28879,21 +28969,42 @@
     },
     {
       "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
-      "target": "external:rust:std::write",
+      "target": "external:rust:tempfile.tempdir",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
       "sites": [
         {
           "start": {
-            "line": 14,
-            "column": 5,
-            "byte": 609
+            "line": 11,
+            "column": 15,
+            "byte": 444
           },
           "end": {
-            "line": 14,
-            "column": 37,
-            "byte": 641
+            "line": 11,
+            "column": 34,
+            "byte": 463
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
+      "target": "external:rust:tempfile::tempdir.context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 11,
+            "column": 15,
+            "byte": 444
+          },
+          "end": {
+            "line": 11,
+            "column": 71,
+            "byte": 500
           }
         }
       ]
@@ -29015,30 +29126,6 @@
         },
         {
           "start": {
-            "line": 11,
-            "column": 15,
-            "byte": 444
-          },
-          "end": {
-            "line": 11,
-            "column": 71,
-            "byte": 500
-          }
-        },
-        {
-          "start": {
-            "line": 14,
-            "column": 5,
-            "byte": 609
-          },
-          "end": {
-            "line": 14,
-            "column": 74,
-            "byte": 678
-          }
-        },
-        {
-          "start": {
             "line": 16,
             "column": 18,
             "byte": 699
@@ -29047,30 +29134,6 @@
             "line": 33,
             "column": 65,
             "byte": 1147
-          }
-        },
-        {
-          "start": {
-            "line": 40,
-            "column": 5,
-            "byte": 1270
-          },
-          "end": {
-            "line": 41,
-            "column": 49,
-            "byte": 1349
-          }
-        },
-        {
-          "start": {
-            "line": 40,
-            "column": 5,
-            "byte": 1270
-          },
-          "end": {
-            "line": 43,
-            "column": 49,
-            "byte": 1430
           }
         }
       ]
@@ -29104,27 +29167,6 @@
             "line": 13,
             "column": 30,
             "byte": 584
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
-      "target": "unresolved:rust:read_to_end",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 40,
-            "column": 5,
-            "byte": 1270
-          },
-          "end": {
-            "line": 42,
-            "column": 31,
-            "byte": 1381
           }
         }
       ]
@@ -29167,27 +29209,6 @@
             "line": 35,
             "column": 25,
             "byte": 1175
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/pdf.rs::render_pdf",
-      "target": "unresolved:rust:tempdir",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 11,
-            "column": 15,
-            "byte": 444
-          },
-          "end": {
-            "line": 11,
-            "column": 34,
-            "byte": 463
           }
         }
       ]
@@ -29860,6 +29881,27 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::run",
+      "target": "external:rust:axum.serve",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 252,
+            "column": 13,
+            "byte": 7894
+          },
+          "end": {
+            "line": 252,
+            "column": 39,
+            "byte": 7920
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::run",
       "target": "external:rust:std::format",
       "kind": "calls",
       "status": "resolved_external",
@@ -29908,6 +29950,27 @@
             "line": 245,
             "column": 42,
             "byte": 7624
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/serve.rs::run",
+      "target": "external:rust:std::net::TcpListener::bind.with_context",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 245,
+            "column": 9,
+            "byte": 7591
+          },
+          "end": {
+            "line": 245,
+            "column": 92,
+            "byte": 7674
           }
         }
       ]
@@ -30175,27 +30238,6 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::run",
-      "target": "unresolved:rust:serve",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 252,
-            "column": 13,
-            "byte": 7894
-          },
-          "end": {
-            "line": 252,
-            "column": 39,
-            "byte": 7920
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::run",
       "target": "unresolved:rust:set_nonblocking",
       "kind": "calls",
       "status": "unresolved",
@@ -30211,27 +30253,6 @@
             "line": 246,
             "column": 35,
             "byte": 7711
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-cli/src/serve.rs::run",
-      "target": "unresolved:rust:with_context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 245,
-            "column": 9,
-            "byte": 7591
-          },
-          "end": {
-            "line": 245,
-            "column": 92,
-            "byte": 7674
           }
         }
       ]
@@ -30259,9 +30280,9 @@
     },
     {
       "source": "function:crates/resume-cli/src/serve.rs::run",
-      "target": "unresolved:rust:SocketAddr",
+      "target": "external:rust:std::SocketAddr",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -30322,7 +30343,7 @@
     },
     {
       "source": "function:crates/resume-cli/src/server_box.rs::external_ip",
-      "target": "external:rust:std::ok",
+      "target": "external:rust:std::net::UdpSocket::bind.ok",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -30338,7 +30359,16 @@
             "column": 61,
             "byte": 1963
           }
-        },
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-cli/src/server_box.rs::external_ip",
+      "target": "external:rust:std::ok",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
         {
           "start": {
             "line": 66,
@@ -32152,9 +32182,9 @@
     },
     {
       "source": "function:crates/resume-core/build.rs::collect",
-      "target": "unresolved:rust:Path",
+      "target": "external:rust:std::Path",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -33343,10 +33373,10 @@
     },
     {
       "source": "function:crates/resume-core/src/load.rs::parse_resume_json",
-      "target": "unresolved:rust:from_str",
+      "target": "external:rust:serde_json.from_str",
       "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
+      "status": "resolved_external",
+      "origin": "lexical",
       "sites": [
         {
           "start": {
@@ -33385,10 +33415,10 @@
     },
     {
       "source": "function:crates/resume-core/src/load.rs::parse_resume_yaml",
-      "target": "unresolved:rust:from_str",
+      "target": "external:rust:serde_yml.from_str",
       "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
+      "status": "resolved_external",
+      "origin": "lexical",
       "sites": [
         {
           "start": {
@@ -33427,10 +33457,10 @@
     },
     {
       "source": "function:crates/resume-core/src/load.rs::to_json",
-      "target": "unresolved:rust:to_string_pretty",
+      "target": "external:rust:serde_json.to_string_pretty",
       "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
+      "status": "resolved_external",
+      "origin": "lexical",
       "sites": [
         {
           "start": {
@@ -33469,7 +33499,7 @@
     },
     {
       "source": "function:crates/resume-core/src/load.rs::to_yaml",
-      "target": "external:rust:std::to_string",
+      "target": "external:rust:serde_yml.to_string",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -37042,27 +37072,6 @@
     },
     {
       "source": "function:crates/resume-core/src/templates.rs::render",
-      "target": "unresolved:rust:minijinja::context",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 65,
-            "column": 15,
-            "byte": 2139
-          },
-          "end": {
-            "line": 65,
-            "column": 73,
-            "byte": 2197
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:crates/resume-core/src/templates.rs::render",
       "target": "unresolved:rust:render",
       "kind": "calls",
       "status": "unresolved",
@@ -38524,7 +38533,7 @@
     },
     {
       "source": "function:crates/resume-core/src/wasm.rs::resume_empty",
-      "target": "external:rust:std::to_string",
+      "target": "external:rust:serde_json.to_string",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -38540,24 +38549,12 @@
             "column": 50,
             "byte": 1785
           }
-        },
-        {
-          "start": {
-            "line": 44,
-            "column": 70,
-            "byte": 1805
-          },
-          "end": {
-            "line": 44,
-            "column": 86,
-            "byte": 1821
-          }
         }
       ]
     },
     {
       "source": "function:crates/resume-core/src/wasm.rs::resume_empty",
-      "target": "external:rust:std::unwrap_or_else",
+      "target": "external:rust:serde_json::to_string.unwrap_or_else",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -38572,6 +38569,27 @@
             "line": 44,
             "column": 87,
             "byte": 1822
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-core/src/wasm.rs::resume_empty",
+      "target": "external:rust:std::to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 44,
+            "column": 70,
+            "byte": 1805
+          },
+          "end": {
+            "line": 44,
+            "column": 86,
+            "byte": 1821
           }
         }
       ]
@@ -38599,7 +38617,7 @@
     },
     {
       "source": "function:crates/resume-core/src/wasm.rs::resume_list_templates",
-      "target": "external:rust:std::to_string",
+      "target": "external:rust:serde_json.to_string",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -38615,24 +38633,12 @@
             "column": 45,
             "byte": 3113
           }
-        },
-        {
-          "start": {
-            "line": 87,
-            "column": 65,
-            "byte": 3133
-          },
-          "end": {
-            "line": 87,
-            "column": 81,
-            "byte": 3149
-          }
         }
       ]
     },
     {
       "source": "function:crates/resume-core/src/wasm.rs::resume_list_templates",
-      "target": "external:rust:std::unwrap_or_else",
+      "target": "external:rust:serde_json::to_string.unwrap_or_else",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -38647,6 +38653,27 @@
             "line": 87,
             "column": 82,
             "byte": 3150
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:crates/resume-core/src/wasm.rs::resume_list_templates",
+      "target": "external:rust:std::to_string",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 87,
+            "column": 65,
+            "byte": 3133
+          },
+          "end": {
+            "line": 87,
+            "column": 81,
+            "byte": 3149
           }
         }
       ]
@@ -40492,6 +40519,48 @@
     },
     {
       "source": "function:packages/landing/src/components/editor/ResumeEditor.tsx::download",
+      "target": "external:tsx:URL.createObjectURL",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 39,
+            "column": 15,
+            "byte": 1131
+          },
+          "end": {
+            "line": 39,
+            "column": 40,
+            "byte": 1156
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:packages/landing/src/components/editor/ResumeEditor.tsx::download",
+      "target": "external:tsx:URL.revokeObjectURL",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 44,
+            "column": 3,
+            "byte": 1255
+          },
+          "end": {
+            "line": 44,
+            "column": 27,
+            "byte": 1279
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:packages/landing/src/components/editor/ResumeEditor.tsx::download",
       "target": "unresolved:tsx:click",
       "kind": "calls",
       "status": "unresolved",
@@ -40528,48 +40597,6 @@
             "line": 40,
             "column": 40,
             "byte": 1197
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:packages/landing/src/components/editor/ResumeEditor.tsx::download",
-      "target": "unresolved:tsx:createObjectURL",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 39,
-            "column": 15,
-            "byte": 1131
-          },
-          "end": {
-            "line": 39,
-            "column": 40,
-            "byte": 1156
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:packages/landing/src/components/editor/ResumeEditor.tsx::download",
-      "target": "unresolved:tsx:revokeObjectURL",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 44,
-            "column": 3,
-            "byte": 1255
-          },
-          "end": {
-            "line": 44,
-            "column": 27,
-            "byte": 1279
           }
         }
       ]
@@ -40771,9 +40798,9 @@
     },
     {
       "source": "function:packages/landing/src/components/editor/ResumePreview.tsx::Description",
-      "target": "unresolved:tsx:ReactNode",
+      "target": "external:tsx:lib::ReactNode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -43168,6 +43195,27 @@
     },
     {
       "source": "function:packages/landing/src/lib/log.ts::pad",
+      "target": "external:typescript:String.padStart",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 32,
+            "column": 47,
+            "byte": 578
+          },
+          "end": {
+            "line": 32,
+            "column": 77,
+            "byte": 608
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:packages/landing/src/lib/log.ts::pad",
       "target": "external:typescript:lib::String",
       "kind": "calls",
       "status": "resolved_external",
@@ -43183,27 +43231,6 @@
             "line": 32,
             "column": 56,
             "byte": 587
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:packages/landing/src/lib/log.ts::pad",
-      "target": "external:typescript:lib::padStart",
-      "kind": "calls",
-      "status": "resolved_external",
-      "origin": "lexical",
-      "sites": [
-        {
-          "start": {
-            "line": 32,
-            "column": 47,
-            "byte": 578
-          },
-          "end": {
-            "line": 32,
-            "column": 77,
-            "byte": 608
           }
         }
       ]
@@ -43491,27 +43518,6 @@
       ]
     },
     {
-      "source": "function:packages/landing/src/lib/log.ts::write",
-      "target": "unresolved:typescript:console[level]",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 54,
-            "column": 3,
-            "byte": 1265
-          },
-          "end": {
-            "line": 54,
-            "column": 45,
-            "byte": 1307
-          }
-        }
-      ]
-    },
-    {
       "source": "function:packages/landing/src/lib/resume.ts::bullets",
       "target": "external:typescript:lib::filter",
       "kind": "calls",
@@ -43789,7 +43795,7 @@
     },
     {
       "source": "function:packages/landing/src/lib/resume.ts::emptyResume",
-      "target": "external:typescript:lib::parse",
+      "target": "external:typescript:JSON.parse",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -43951,7 +43957,7 @@
     },
     {
       "source": "function:packages/landing/src/lib/resume.ts::parseDocument",
-      "target": "external:typescript:lib::parse",
+      "target": "external:typescript:JSON.parse",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -44143,7 +44149,7 @@
     },
     {
       "source": "function:packages/landing/src/lib/resume.ts::saveResume",
-      "target": "external:typescript:lib::stringify",
+      "target": "external:typescript:JSON.stringify",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -44206,7 +44212,7 @@
     },
     {
       "source": "function:packages/landing/src/lib/resume.ts::serializeResume",
-      "target": "external:typescript:lib::stringify",
+      "target": "external:typescript:JSON.stringify",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -44269,7 +44275,7 @@
     },
     {
       "source": "function:packages/landing/src/lib/resume.ts::uid",
-      "target": "external:typescript:lib::random",
+      "target": "external:typescript:Math.random",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -44284,6 +44290,27 @@
             "line": 122,
             "column": 20,
             "byte": 2407
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:packages/landing/src/lib/resume.ts::uid",
+      "target": "external:typescript:crypto.randomUUID",
+      "kind": "calls",
+      "status": "resolved_external",
+      "origin": "lexical",
+      "sites": [
+        {
+          "start": {
+            "line": 121,
+            "column": 7,
+            "byte": 2368
+          },
+          "end": {
+            "line": 121,
+            "column": 26,
+            "byte": 2387
           }
         }
       ]
@@ -44331,27 +44358,6 @@
       ]
     },
     {
-      "source": "function:packages/landing/src/lib/resume.ts::uid",
-      "target": "unresolved:typescript:randomUUID",
-      "kind": "calls",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 121,
-            "column": 7,
-            "byte": 2368
-          },
-          "end": {
-            "line": 121,
-            "column": 26,
-            "byte": 2387
-          }
-        }
-      ]
-    },
-    {
       "source": "function:scripts/convert_templates.py::camel",
       "target": "external:python:builtins::lower",
       "kind": "calls",
@@ -44368,6 +44374,39 @@
             "line": 36,
             "column": 27,
             "byte": 1041
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:scripts/convert_templates.py::camel",
+      "target": "external:python:builtins::str",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 33,
+            "column": 17,
+            "byte": 941
+          },
+          "end": {
+            "line": 33,
+            "column": 20,
+            "byte": 944
+          }
+        },
+        {
+          "start": {
+            "line": 33,
+            "column": 25,
+            "byte": 949
+          },
+          "end": {
+            "line": 33,
+            "column": 28,
+            "byte": 952
           }
         }
       ]
@@ -44599,9 +44638,9 @@
     },
     {
       "source": "function:scripts/convert_templates.py::convert_expr",
-      "target": "unresolved:python:list",
+      "target": "external:python:builtins::list",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -44614,6 +44653,39 @@
             "line": 46,
             "column": 40,
             "byte": 1265
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:scripts/convert_templates.py::convert_expr",
+      "target": "external:python:builtins::str",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 46,
+            "column": 24,
+            "byte": 1249
+          },
+          "end": {
+            "line": 46,
+            "column": 27,
+            "byte": 1252
+          }
+        },
+        {
+          "start": {
+            "line": 46,
+            "column": 45,
+            "byte": 1270
+          },
+          "end": {
+            "line": 46,
+            "column": 48,
+            "byte": 1273
           }
         }
       ]
@@ -45148,30 +45220,9 @@
     },
     {
       "source": "function:scripts/convert_templates.py::convert_file",
-      "target": "unresolved:python:Path",
+      "target": "external:python:builtins::list",
       "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 60,
-            "column": 23,
-            "byte": 1761
-          },
-          "end": {
-            "line": 60,
-            "column": 27,
-            "byte": 1765
-          }
-        }
-      ]
-    },
-    {
-      "source": "function:scripts/convert_templates.py::convert_file",
-      "target": "unresolved:python:list",
-      "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -45201,6 +45252,60 @@
       ]
     },
     {
+      "source": "function:scripts/convert_templates.py::convert_file",
+      "target": "external:python:builtins::str",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 60,
+            "column": 32,
+            "byte": 1770
+          },
+          "end": {
+            "line": 60,
+            "column": 35,
+            "byte": 1773
+          }
+        },
+        {
+          "start": {
+            "line": 63,
+            "column": 15,
+            "byte": 1885
+          },
+          "end": {
+            "line": 63,
+            "column": 18,
+            "byte": 1888
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:scripts/convert_templates.py::convert_file",
+      "target": "unresolved:python:Path",
+      "kind": "uses_type",
+      "status": "unresolved",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 60,
+            "column": 23,
+            "byte": 1761
+          },
+          "end": {
+            "line": 60,
+            "column": 27,
+            "byte": 1765
+          }
+        }
+      ]
+    },
+    {
       "source": "function:scripts/convert_templates.py::innermost_var",
       "target": "external:python:builtins::reversed",
       "kind": "calls",
@@ -45223,9 +45328,9 @@
     },
     {
       "source": "function:scripts/convert_templates.py::innermost_var",
-      "target": "unresolved:python:list",
+      "target": "external:python:builtins::list",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -45238,6 +45343,27 @@
             "line": 39,
             "column": 30,
             "byte": 1102
+          }
+        }
+      ]
+    },
+    {
+      "source": "function:scripts/convert_templates.py::innermost_var",
+      "target": "external:python:builtins::str",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 39,
+            "column": 35,
+            "byte": 1107
+          },
+          "end": {
+            "line": 39,
+            "column": 38,
+            "byte": 1110
           }
         }
       ]
@@ -45466,9 +45592,9 @@
     },
     {
       "source": "interface:packages/landing/src/app/layout.tsx::RootLayoutProps",
-      "target": "unresolved:tsx:ReactNode",
+      "target": "external:tsx:lib::ReactNode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -45550,9 +45676,9 @@
     },
     {
       "source": "interface:packages/landing/src/components/molecules/SectionHead.tsx::SectionHeadProps",
-      "target": "unresolved:tsx:ReactNode",
+      "target": "external:tsx:lib::ReactNode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -47356,6 +47482,27 @@
     },
     {
       "source": "module:crates/resume-core/src/templates.rs",
+      "target": "external:rust:std::OnceLock",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 14,
+            "column": 13,
+            "byte": 325
+          },
+          "end": {
+            "line": 14,
+            "column": 21,
+            "byte": 333
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:crates/resume-core/src/templates.rs",
       "target": "unresolved:rust:Environment",
       "kind": "uses_type",
       "status": "unresolved",
@@ -47371,27 +47518,6 @@
             "line": 14,
             "column": 40,
             "byte": 352
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:crates/resume-core/src/templates.rs",
-      "target": "unresolved:rust:OnceLock",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 14,
-            "column": 13,
-            "byte": 325
-          },
-          "end": {
-            "line": 14,
-            "column": 21,
-            "byte": 333
           }
         }
       ]
@@ -48308,6 +48434,27 @@
     },
     {
       "source": "module:packages/landing/src/app/layout.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 50,
+            "column": 19,
+            "byte": 1542
+          },
+          "end": {
+            "line": 50,
+            "column": 21,
+            "byte": 1544
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/app/layout.tsx",
       "target": "interface:packages/landing/src/app/layout.tsx::RootLayoutProps",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -48323,27 +48470,6 @@
             "line": 50,
             "column": 37,
             "byte": 1560
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/app/layout.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 50,
-            "column": 19,
-            "byte": 1542
-          },
-          "end": {
-            "line": 50,
-            "column": 21,
-            "byte": 1544
           }
         }
       ]
@@ -48490,9 +48616,9 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumeEditor.tsx",
-      "target": "unresolved:tsx:FC",
+      "target": "external:tsx:lib::FC",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48616,9 +48742,9 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
-      "target": "unresolved:tsx:FC",
+      "target": "external:tsx:lib::FC",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48673,9 +48799,9 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/ResumePreview.tsx",
-      "target": "unresolved:tsx:ReactNode",
+      "target": "external:tsx:lib::ReactNode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -48830,6 +48956,27 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 7,
+            "column": 24,
+            "byte": 197
+          },
+          "end": {
+            "line": 7,
+            "column": 26,
+            "byte": 199
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
       "target": "type:packages/landing/src/components/editor/inputs.tsx::SetResume",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -48845,27 +48992,6 @@
             "line": 7,
             "column": 69,
             "byte": 242
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/CoreForm.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 7,
-            "column": 24,
-            "byte": 197
-          },
-          "end": {
-            "line": 7,
-            "column": 26,
-            "byte": 199
           }
         }
       ]
@@ -48921,6 +49047,27 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 29,
+            "column": 29,
+            "byte": 469
+          },
+          "end": {
+            "line": 29,
+            "column": 31,
+            "byte": 471
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
       "target": "type:packages/landing/src/components/editor/inputs.tsx::SetResume",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -48963,27 +49110,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 29,
-            "column": 29,
-            "byte": 469
-          },
-          "end": {
-            "line": 29,
-            "column": 31,
-            "byte": 471
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/EducationForm.tsx",
       "target": "unresolved:tsx:ResumeData",
       "kind": "uses_type",
       "status": "unresolved",
@@ -49016,6 +49142,27 @@
       "kind": "defines",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 25,
+            "column": 30,
+            "byte": 406
+          },
+          "end": {
+            "line": 25,
+            "column": 32,
+            "byte": 408
+          }
+        }
+      ]
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
@@ -49061,27 +49208,6 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 25,
-            "column": 30,
-            "byte": 406
-          },
-          "end": {
-            "line": 25,
-            "column": 32,
-            "byte": 408
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExperienceForm.tsx",
       "target": "unresolved:tsx:ResumeData",
       "kind": "uses_type",
       "status": "unresolved",
@@ -49114,6 +49240,51 @@
       "kind": "defines",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 23,
+            "column": 34,
+            "byte": 537
+          },
+          "end": {
+            "line": 23,
+            "column": 36,
+            "byte": 539
+          }
+        },
+        {
+          "start": {
+            "line": 98,
+            "column": 29,
+            "byte": 2255
+          },
+          "end": {
+            "line": 98,
+            "column": 31,
+            "byte": 2257
+          }
+        },
+        {
+          "start": {
+            "line": 149,
+            "column": 30,
+            "byte": 3493
+          },
+          "end": {
+            "line": 149,
+            "column": 32,
+            "byte": 3495
+          }
+        }
+      ]
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
@@ -49177,51 +49348,6 @@
             "line": 13,
             "column": 32,
             "byte": 287
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ExtrasForm.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 23,
-            "column": 34,
-            "byte": 537
-          },
-          "end": {
-            "line": 23,
-            "column": 36,
-            "byte": 539
-          }
-        },
-        {
-          "start": {
-            "line": 98,
-            "column": 29,
-            "byte": 2255
-          },
-          "end": {
-            "line": 98,
-            "column": 31,
-            "byte": 2257
-          }
-        },
-        {
-          "start": {
-            "line": 149,
-            "column": 30,
-            "byte": 3493
-          },
-          "end": {
-            "line": 149,
-            "column": 32,
-            "byte": 3495
           }
         }
       ]
@@ -49357,6 +49483,39 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 25,
+            "column": 28,
+            "byte": 465
+          },
+          "end": {
+            "line": 25,
+            "column": 30,
+            "byte": 467
+          }
+        },
+        {
+          "start": {
+            "line": 101,
+            "column": 26,
+            "byte": 2393
+          },
+          "end": {
+            "line": 101,
+            "column": 28,
+            "byte": 2395
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
       "target": "type:packages/landing/src/components/editor/inputs.tsx::SetResume",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -49384,39 +49543,6 @@
             "line": 101,
             "column": 71,
             "byte": 2438
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/editor/forms/ProjectSkillForm.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 25,
-            "column": 28,
-            "byte": 465
-          },
-          "end": {
-            "line": 25,
-            "column": 30,
-            "byte": 467
-          }
-        },
-        {
-          "start": {
-            "line": 101,
-            "column": 26,
-            "byte": 2393
-          },
-          "end": {
-            "line": 101,
-            "column": 28,
-            "byte": 2395
           }
         }
       ]
@@ -49526,9 +49652,9 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/inputs.tsx",
-      "target": "unresolved:tsx:FC",
+      "target": "external:tsx:lib::FC",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -49583,9 +49709,9 @@
     },
     {
       "source": "module:packages/landing/src/components/editor/inputs.tsx",
-      "target": "unresolved:tsx:ReactNode",
+      "target": "external:tsx:lib::ReactNode",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -49714,6 +49840,27 @@
     },
     {
       "source": "module:packages/landing/src/components/molecules/Footer.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 10,
+            "column": 15,
+            "byte": 178
+          },
+          "end": {
+            "line": 10,
+            "column": 17,
+            "byte": 180
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/molecules/Footer.tsx",
       "target": "interface:packages/landing/src/components/molecules/Footer.tsx::FooterProps",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -49729,27 +49876,6 @@
             "line": 10,
             "column": 29,
             "byte": 192
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/molecules/Footer.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 10,
-            "column": 15,
-            "byte": 178
-          },
-          "end": {
-            "line": 10,
-            "column": 17,
-            "byte": 180
           }
         }
       ]
@@ -49788,6 +49914,51 @@
       "kind": "defines",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 29,
+            "column": 20,
+            "byte": 569
+          },
+          "end": {
+            "line": 29,
+            "column": 22,
+            "byte": 571
+          }
+        },
+        {
+          "start": {
+            "line": 44,
+            "column": 17,
+            "byte": 937
+          },
+          "end": {
+            "line": 44,
+            "column": 19,
+            "byte": 939
+          }
+        },
+        {
+          "start": {
+            "line": 79,
+            "column": 15,
+            "byte": 1961
+          },
+          "end": {
+            "line": 79,
+            "column": 17,
+            "byte": 1963
+          }
+        }
+      ]
     },
     {
       "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
@@ -49848,51 +50019,6 @@
             "line": 79,
             "column": 29,
             "byte": 1975
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/molecules/Navbar.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 29,
-            "column": 20,
-            "byte": 569
-          },
-          "end": {
-            "line": 29,
-            "column": 22,
-            "byte": 571
-          }
-        },
-        {
-          "start": {
-            "line": 44,
-            "column": 17,
-            "byte": 937
-          },
-          "end": {
-            "line": 44,
-            "column": 19,
-            "byte": 939
-          }
-        },
-        {
-          "start": {
-            "line": 79,
-            "column": 15,
-            "byte": 1961
-          },
-          "end": {
-            "line": 79,
-            "column": 17,
-            "byte": 1963
           }
         }
       ]
@@ -50039,6 +50165,27 @@
     },
     {
       "source": "module:packages/landing/src/components/molecules/SectionHead.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 8,
+            "column": 20,
+            "byte": 139
+          },
+          "end": {
+            "line": 8,
+            "column": 22,
+            "byte": 141
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/molecules/SectionHead.tsx",
       "target": "interface:packages/landing/src/components/molecules/SectionHead.tsx::SectionHeadProps",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -50054,27 +50201,6 @@
             "line": 8,
             "column": 39,
             "byte": 158
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/molecules/SectionHead.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 8,
-            "column": 20,
-            "byte": 139
-          },
-          "end": {
-            "line": 8,
-            "column": 22,
-            "byte": 141
           }
         }
       ]
@@ -50109,9 +50235,9 @@
     },
     {
       "source": "module:packages/landing/src/components/resume/ResumeView.tsx",
-      "target": "unresolved:tsx:FC",
+      "target": "external:tsx:lib::FC",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -50141,6 +50267,96 @@
       "kind": "defines",
       "status": "resolved_internal",
       "origin": "syntax"
+    },
+    {
+      "source": "module:packages/landing/src/components/resume/Sections.tsx",
+      "target": "external:tsx:lib::FC",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 16,
+            "column": 23,
+            "byte": 278
+          },
+          "end": {
+            "line": 16,
+            "column": 25,
+            "byte": 280
+          }
+        },
+        {
+          "start": {
+            "line": 34,
+            "column": 33,
+            "byte": 759
+          },
+          "end": {
+            "line": 34,
+            "column": 35,
+            "byte": 761
+          }
+        },
+        {
+          "start": {
+            "line": 76,
+            "column": 30,
+            "byte": 2234
+          },
+          "end": {
+            "line": 76,
+            "column": 32,
+            "byte": 2236
+          }
+        },
+        {
+          "start": {
+            "line": 121,
+            "column": 28,
+            "byte": 3764
+          },
+          "end": {
+            "line": 121,
+            "column": 30,
+            "byte": 3766
+          }
+        },
+        {
+          "start": {
+            "line": 150,
+            "column": 32,
+            "byte": 4609
+          },
+          "end": {
+            "line": 150,
+            "column": 34,
+            "byte": 4611
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/components/resume/Sections.tsx",
+      "target": "external:tsx:lib::ReactNode",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 17,
+            "column": 9,
+            "byte": 291
+          },
+          "end": {
+            "line": 17,
+            "column": 18,
+            "byte": 300
+          }
+        }
+      ]
     },
     {
       "source": "module:packages/landing/src/components/resume/Sections.tsx",
@@ -50222,96 +50438,6 @@
             "line": 122,
             "column": 27,
             "byte": 3795
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/resume/Sections.tsx",
-      "target": "unresolved:tsx:FC",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 16,
-            "column": 23,
-            "byte": 278
-          },
-          "end": {
-            "line": 16,
-            "column": 25,
-            "byte": 280
-          }
-        },
-        {
-          "start": {
-            "line": 34,
-            "column": 33,
-            "byte": 759
-          },
-          "end": {
-            "line": 34,
-            "column": 35,
-            "byte": 761
-          }
-        },
-        {
-          "start": {
-            "line": 76,
-            "column": 30,
-            "byte": 2234
-          },
-          "end": {
-            "line": 76,
-            "column": 32,
-            "byte": 2236
-          }
-        },
-        {
-          "start": {
-            "line": 121,
-            "column": 28,
-            "byte": 3764
-          },
-          "end": {
-            "line": 121,
-            "column": 30,
-            "byte": 3766
-          }
-        },
-        {
-          "start": {
-            "line": 150,
-            "column": 32,
-            "byte": 4609
-          },
-          "end": {
-            "line": 150,
-            "column": 34,
-            "byte": 4611
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/components/resume/Sections.tsx",
-      "target": "unresolved:tsx:ReactNode",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 17,
-            "column": 9,
-            "byte": 291
-          },
-          "end": {
-            "line": 17,
-            "column": 18,
-            "byte": 300
           }
         }
       ]
@@ -50795,6 +50921,27 @@
     },
     {
       "source": "module:packages/landing/src/lib/log.ts",
+      "target": "external:typescript:lib::Record",
+      "kind": "uses_type",
+      "status": "resolved_external",
+      "origin": "syntax",
+      "sites": [
+        {
+          "start": {
+            "line": 9,
+            "column": 15,
+            "byte": 138
+          },
+          "end": {
+            "line": 9,
+            "column": 21,
+            "byte": 144
+          }
+        }
+      ]
+    },
+    {
+      "source": "module:packages/landing/src/lib/log.ts",
       "target": "interface:packages/landing/src/lib/log.ts::Logger",
       "kind": "uses_type",
       "status": "resolved_internal",
@@ -50852,27 +50999,6 @@
             "line": 9,
             "column": 40,
             "byte": 163
-          }
-        }
-      ]
-    },
-    {
-      "source": "module:packages/landing/src/lib/log.ts",
-      "target": "unresolved:typescript:Record",
-      "kind": "uses_type",
-      "status": "unresolved",
-      "origin": "syntax",
-      "sites": [
-        {
-          "start": {
-            "line": 9,
-            "column": 15,
-            "byte": 138
-          },
-          "end": {
-            "line": 9,
-            "column": 21,
-            "byte": 144
           }
         }
       ]
@@ -51019,9 +51145,9 @@
     },
     {
       "source": "module:packages/landing/src/lib/resume.ts",
-      "target": "unresolved:typescript:Promise",
+      "target": "external:typescript:lib::Promise",
       "kind": "uses_type",
-      "status": "unresolved",
+      "status": "resolved_external",
       "origin": "syntax",
       "sites": [
         {
@@ -51656,7 +51782,7 @@
     },
     {
       "source": "module:scripts/convert_templates.py",
-      "target": "external:python:builtins::compile",
+      "target": "external:python:re.compile",
       "kind": "calls",
       "status": "resolved_external",
       "origin": "lexical",
@@ -52828,25 +52954,6 @@
     {
       "severity": "warning",
       "kind": "unresolved_import",
-      "message": "cannot resolve import `../../AGENTS.md`",
-      "file": "crates/resume-cli/AGENTS.md",
-      "range": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "byte": 82
-        },
-        "end": {
-          "line": 1,
-          "column": 2,
-          "byte": 83
-        }
-      },
-      "language": "markdown"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
       "message": "cannot resolve import `../resume-core`",
       "file": "crates/resume-cli/README.md",
       "range": {
@@ -52859,25 +52966,6 @@
           "line": 1,
           "column": 2,
           "byte": 224
-        }
-      },
-      "language": "markdown"
-    },
-    {
-      "severity": "warning",
-      "kind": "unresolved_import",
-      "message": "cannot resolve import `../../AGENTS.md`",
-      "file": "crates/resume-core/AGENTS.md",
-      "range": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "byte": 125
-        },
-        "end": {
-          "line": 1,
-          "column": 2,
-          "byte": 126
         }
       },
       "language": "markdown"
@@ -53152,15 +53240,15 @@
   "statistics": {
     "files": 65,
     "packages": 2,
-    "nodes": 1038,
-    "edges": 2611,
+    "nodes": 1047,
+    "edges": 2619,
     "symbols": 581,
-    "unresolvedEdges": 225,
-    "diagnostics": 17,
+    "unresolvedEdges": 167,
+    "diagnostics": 15,
     "byNodeKind": {
       "constant": 68,
       "enum": 2,
-      "external_symbol": 161,
+      "external_symbol": 196,
       "file": 65,
       "framework": 9,
       "function": 160,
@@ -53171,31 +53259,31 @@
       "repository": 1,
       "struct": 21,
       "type": 4,
-      "unknown": 132,
+      "unknown": 106,
       "variable": 123
     },
     "byEdgeKind": {
-      "calls": 686,
+      "calls": 695,
       "contains": 758,
       "defines": 603,
       "exports": 253,
-      "imports": 127,
+      "imports": 122,
       "uses_framework": 9,
-      "uses_type": 175
+      "uses_type": 179
     },
     "byLanguage": {
       "bash": 8,
       "javascript": 9,
-      "markdown": 39,
+      "markdown": 32,
       "python": 58,
-      "rust": 533,
+      "rust": 550,
       "tsx": 196,
-      "typescript": 183
+      "typescript": 182
     },
     "byStatus": {
-      "resolved_external": 450,
-      "resolved_internal": 1936,
-      "unresolved": 225
+      "resolved_external": 514,
+      "resolved_internal": 1938,
+      "unresolved": 167
     },
     "byFramework": {
       "anyhow": 1,
