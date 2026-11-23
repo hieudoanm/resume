@@ -58,6 +58,7 @@ jobs:
         os:
           - ubuntu-latest
           - macos-latest
+          - macos-15-intel
           - windows-latest
 
     steps:
@@ -81,6 +82,7 @@ jobs:
           case "${{ matrix.os }}" in
             ubuntu-latest) mv target/release/resume cli-resume-x86_64-unknown-linux-gnu ;;
             macos-latest) mv target/release/resume cli-resume-aarch64-apple-darwin ;;
+            macos-15-intel) mv target/release/resume cli-resume-x86_64-apple-darwin ;;
             windows-latest) mv target/release/resume.exe cli-resume-x86_64-pc-windows-msvc.exe ;;
           esac
 
