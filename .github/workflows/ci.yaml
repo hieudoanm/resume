@@ -79,16 +79,16 @@ jobs:
         shell: bash
         run: |
           case "${{ matrix.os }}" in
-            ubuntu-latest) mv target/release/resume resume-x86_64-unknown-linux-gnu ;;
-            macos-latest) mv target/release/resume resume-aarch64-apple-darwin ;;
-            windows-latest) mv target/release/resume.exe resume-x86_64-pc-windows-msvc.exe ;;
+            ubuntu-latest) mv target/release/resume cli-resume-x86_64-unknown-linux-gnu ;;
+            macos-latest) mv target/release/resume cli-resume-aarch64-apple-darwin ;;
+            windows-latest) mv target/release/resume.exe cli-resume-x86_64-pc-windows-msvc.exe ;;
           esac
 
       - name: Upload CLI binary
         uses: actions/upload-artifact@v7.0.2
         with:
-          name: resume-cli-${{ matrix.os }}
-          path: resume-*
+          name: cli-resume-${{ matrix.os }}
+          path: cli-resume-*
           if-no-files-found: error
           retention-days: 7
 
@@ -109,7 +109,7 @@ jobs:
         uses: actions/download-artifact@v8.0.2
         with:
           path: dist
-          pattern: resume-cli-*
+          pattern: cli-resume-*
           merge-multiple: true
 
       - name: Delete existing latest release
