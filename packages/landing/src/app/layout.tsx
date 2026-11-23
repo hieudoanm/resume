@@ -11,7 +11,10 @@ const GITHUB = 'https://github.com/hieudoanm/resume';
 const LOGO =
   process.env.NODE_ENV === 'production' ? '/resume/logo.svg' : '/logo.svg';
 
-const NAV_LINKS = [{ label: 'Editor', href: '/editor/' }];
+const NAV_LINKS = [
+  { label: 'Editor', href: '/editor/' },
+  { label: 'Downloads', href: '/downloads/' },
+];
 
 const DESCRIPTION =
   'Hieu Doan — software engineer with 10+ years of experience. Resume and a browser-based Resume editor that exports YAML for the resume CLI.';
