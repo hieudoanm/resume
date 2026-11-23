@@ -80,7 +80,7 @@ const CLI: Cell[] = [
 function Section({
   icon: Icon,
   title,
-  children
+  children,
 }: {
   icon: IconType;
   title: string;
@@ -105,15 +105,14 @@ function CardGrid({ cells, cols }: { cells: Cell[]; cols: string }) {
       {visible.map((c) => (
         <div
           key={c.name}
-          className="card border-base-300 bg-base-100 border p-6"
-        >
+          className="card border-base-300 bg-base-100 border p-6">
           <div className="bg-primary/10 text-primary mb-3.5 flex h-11 w-11 items-center justify-center rounded-lg">
             <c.icon className="h-6 w-6" />
           </div>
           <h3 className="text-base-content m-0 text-lg leading-tight">
             {c.name}
           </h3>
-          <p className="text-base-content/60 mt-1 line-clamp-2 text-sm">
+          <p className="text-base-content/60 mt-1 truncate text-sm">
             {c.desc}
           </p>
           <div className="mt-4 flex flex-col gap-2">
@@ -121,8 +120,7 @@ function CardGrid({ cells, cols }: { cells: Cell[]; cols: string }) {
               <a
                 key={a.href}
                 href={a.href}
-                className="btn btn-primary btn-sm gap-2"
-              >
+                className="btn btn-primary btn-sm gap-2">
                 <FaDownload className="h-3.5 w-3.5" />
                 {a.label}
               </a>
