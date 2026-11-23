@@ -222,7 +222,9 @@ export const serializeResume = (
   format: 'yaml' | 'json'
 ): string => {
   const json = JSON.stringify(data);
-  return format === 'yaml' ? resume_serialize_yaml(json) : resume_serialize_json(json);
+  return format === 'yaml'
+    ? resume_serialize_yaml(json)
+    : resume_serialize_json(json);
 };
 
 export const parseResume = (text: string): ResumeData => {
@@ -230,7 +232,9 @@ export const parseResume = (text: string): ResumeData => {
   try {
     parsed = parseDocument(text);
   } catch (e) {
-    throw new Error(e instanceof Error ? e.message : 'Could not parse document');
+    throw new Error(
+      e instanceof Error ? e.message : 'Could not parse document'
+    );
   }
   if (!parsed || typeof parsed !== 'object') throw new Error('Empty document');
   return { ...emptyResume(), ...parsed };

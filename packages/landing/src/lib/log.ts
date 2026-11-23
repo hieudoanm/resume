@@ -41,16 +41,16 @@ const minRank = (): number => {
   return LEVELS.debug.rank;
 };
 
-const write = (level: Level, scope: string | undefined, args: unknown[]): void => {
+const write = (
+  level: Level,
+  scope: string | undefined,
+  args: unknown[]
+): void => {
   const cfg = LEVELS[level];
   if (cfg.rank < minRank()) return;
   const tag = scope ? `[${scope}] ` : '';
   const prefix = `%c${timestamp()} %c${cfg.label}%c ${tag}`;
-  const styles = [
-    'color:#9ca3af',
-    cfg.css,
-    'color:inherit;font-weight:400'
-  ];
+  const styles = ['color:#9ca3af', cfg.css, 'color:inherit;font-weight:400'];
   console[level](prefix, ...styles, ...args);
 };
 

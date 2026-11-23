@@ -8,12 +8,13 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 const GITHUB = 'https://github.com/hieudoanm/resume';
+const BASE = process.env.NODE_ENV === 'production' ? '/resume' : '';
 const LOGO =
   process.env.NODE_ENV === 'production' ? '/resume/logo.svg' : '/logo.svg';
 
 const NAV_LINKS = [
   { label: 'Editor', href: '/editor/' },
-  { label: 'Downloads', href: '/downloads/' },
+  { label: 'Downloads', href: '/downloads/' }
 ];
 
 const DESCRIPTION =
@@ -40,8 +41,8 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', images: ['/og.png'] },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
+      { url: `${BASE}/favicon.ico`, sizes: 'any' },
+      { url: `${BASE}/favicon.svg`, type: 'image/svg+xml' }
     ]
   }
 };
