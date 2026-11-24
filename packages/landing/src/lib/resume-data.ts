@@ -156,18 +156,46 @@ export const RESUME_EDUCATION: ResumeEducation[] = [
 
 export const RESUME_PROJECTS: ResumeProject[] = [
   {
-    name: 'hieudoanm.github.io',
+    name: 'mars',
     description:
-      'Personal portfolio and app hub — 100+ tools built with Next.js, React, and Tauri.',
-    tech: ['Next.js', 'TypeScript', 'Tauri', 'Tailwind CSS'],
-    url: 'https://github.com/hieudoanm/hieudoanm.github.io'
+      'Interactive computing platform — notebook and machine-learning studio in Rust with a Tauri desktop app.',
+    tech: ['Rust', 'Tauri', 'TypeScript'],
+    url: 'https://github.com/hieudoanm/mars'
   },
   {
-    name: 'resume',
+    name: 'backers',
     description:
-      'Resume generator and editor — YAML-driven templates rendered to Markdown, HTML and PDF by a Rust CLI, with a browser editor.',
-    tech: ['Rust', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    url: 'https://github.com/hieudoanm/resume'
+      'Back-end as a Service in a single Rust binary — auth, document DB on SQLite, realtime, webhooks, cron, secrets and an MCP server.',
+    tech: ['Rust', 'SQLite', 'WebSocket', 'MCP'],
+    url: 'https://github.com/hieudoanm/backers'
+  },
+  {
+    name: 'neuro.imagers',
+    description:
+      'Local-first desktop workspace for EEG, MEG and MRI research data — deterministic parsing, provenance and checksums.',
+    tech: ['Rust', 'Tauri', 'TypeScript'],
+    url: 'https://github.com/hieudoanm/neuro.imagers'
+  },
+  {
+    name: 'tracers',
+    description:
+      'High-performance, multi-language code intelligence and dependency-graph analysis — fast enough to run on every commit.',
+    tech: ['Rust', 'Code analysis'],
+    url: 'https://github.com/hieudoanm/tracers'
+  },
+  {
+    name: 'linguae',
+    description:
+      'Language detection with a local character-level model — CLI and desktop app, no cloud, no pretrained weights.',
+    tech: ['Rust', 'Python', 'Tauri'],
+    url: 'https://github.com/hieudoanm/linguae'
+  },
+  {
+    name: 'vectors',
+    description:
+      'Raster ↔ vector conversion in Rust — PNG/JPEG to clean SVG paths and back, with editor and browser extensions.',
+    tech: ['Rust', 'TypeScript'],
+    url: 'https://github.com/hieudoanm/vectors'
   }
 ];
 
