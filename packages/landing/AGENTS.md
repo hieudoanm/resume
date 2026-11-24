@@ -5,11 +5,13 @@ deployed to GitHub Pages at `https://hieudoanm.github.io/resume/`
 (project site — `basePath: "/resume"`, `assetPrefix` likewise in
 production).
 
-Two pages:
+Pages:
 
-- `/` — the resume (profile, experience, projects, skills, education)
+- `/` — landing page (hero, features, templates, quickstart, CTA) — the
+  resume itself lives at `https://hieudoanm.github.io/`
 - `/editor` — a client-side resume editor producing YAML/JSON matching the
   `resume-core` schema (`crates/resume-core/src/types.rs`, camelCase)
+- `/downloads`, `/docs` — release binaries and documentation
 
 ## Commands
 
@@ -24,10 +26,11 @@ pnpm run typecheck
 ## Structure
 
 - `src/app/layout.tsx` — metadata, fonts, global `Navbar`/`Footer`.
-- `src/app/page.tsx` — resume page.
+- `src/app/page.tsx` — landing page.
 - `src/app/editor/page.tsx` — resume editor page.
-- `src/components/resume/` — resume data (`data.ts`) and section
-  components (`Sections.tsx`, `ResumeView.tsx`).
+- `src/lib/resume-data.ts` — resume seed data for the editor (moved from
+  `components/resume/`; the rendered resume lives in the
+  `hieudoanm.github.io` repo).
 - `src/components/editor/` — editor shell (`ResumeEditor.tsx`), live preview
   (`ResumePreview.tsx`), form inputs (`inputs.tsx`) and per-section forms
   (`forms/`).

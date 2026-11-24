@@ -1,8 +1,9 @@
 # resume
 
 Resume tooling: a Rust CLI/core (`crates/`) that renders YAML resumes to
-Markdown/HTML/PDF, and a static Next.js site (`packages/landing`) with the
-resume at `/` and a browser resume editor at `/editor`.
+Markdown/HTML/PDF, and a static Next.js site (`packages/landing`) — landing
+page at `/`, browser resume editor at `/editor`, docs at `/docs`. The resume
+itself is rendered at <https://hieudoanm.github.io/>.
 
 ## Layout
 

@@ -10,7 +10,7 @@ import {
   RESUME_PROFILE,
   RESUME_PROJECTS,
   RESUME_SKILLS
-} from '@/components/resume/data';
+} from '@/lib/resume-data';
 
 // Types mirror crates/resume-core/src/types.rs (serde camelCase). Serde
 // itself lives in the @resume/core WASM build — call ensureWasm() once
