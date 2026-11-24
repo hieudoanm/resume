@@ -14,7 +14,8 @@ const LOGO =
 
 const NAV_LINKS = [
   { label: 'Editor', href: '/editor/' },
-  { label: 'Downloads', href: '/downloads/' }
+  { label: 'Downloads', href: '/downloads/' },
+  { label: 'Docs', href: '/docs/' }
 ];
 
 const DESCRIPTION =
