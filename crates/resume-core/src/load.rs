@@ -4,9 +4,13 @@ use crate::types::ResumeData;
 pub const DEFAULT_RESUME_YAML: &str = r#"personal:
   fullName: John Doe
   jobTitle: Software Engineer
+
+contact:
   email: john.doe@example.com
   phone: +1 123 456 7890
   address: 123 Main St, City, Country
+
+websites:
   website: https://johndoe.com
   linkedin: https://linkedin.com/in/johndoe
   github: https://github.com/johndoe
@@ -37,7 +41,7 @@ education:
 projects:
   - id: proj-1
     name: Project Name
-    link: https://example.com
+    organization: Example Org
     description: A brief description of the project
     technologies: Go, React, PostgreSQL
 
