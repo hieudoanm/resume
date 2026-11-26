@@ -28,7 +28,7 @@
     "@types/node": "26.6.10",
     "@types/react": "19.3.3",
     "@types/react-dom": "19.3.0",
-    "daisyui": "5.8.2",
+    "daisyui": "5.8.3",
     "eslint": "10.15.0",
     "eslint-config-next": "16.4.6",
     "kill-port": "2.0.1",
